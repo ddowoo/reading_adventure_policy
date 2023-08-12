@@ -1,0 +1,888 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Licenses</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5a7ac78f-70c1-4c50-8da2-9f66de031704" class="page sans"><header><h1 class="page-title">Licenses</h1><p class="page-description"></p></header><div class="page-body"><p id="1666427a-b378-46c8-9ccc-a6bd7d3dc009" class="">
+</p><p id="63174044-5df4-4f7f-9ee4-6dfadcd3b244" class=""><strong>@invertase/react-native-apple-authentication</strong></p><p id="27aae016-172b-4620-b345-5b87fb594fdf" class=""><a href="https://github.com/react-native-clipboard/clipboard">https://github.com/invertase/react-native-apple-authentication</a></p><p id="793c3e2c-c081-4d51-873d-ed72efd0355e" class="">Copyright (c) 2016-present Invertase Limited &lt;oss@invertase.io&gt; &amp; Contributors</p><p id="30613fe7-6487-45db-80bd-36aae9f9dfca" class="">Apache License 2.0</p><p id="8f15e826-8f26-4bf5-a8fa-e607cf23f78e" class="">
+</p><p id="70a0eba9-3051-43e1-bf20-ba0f2f6e90fc" class=""><strong><strong>@react-native-clipboard/clipboard</strong></strong></p><p id="e261e37c-7a9e-42fe-9049-af44d273ec4a" class=""><a href="https://github.com/react-native-clipboard/clipboard">https://github.com/react-native-clipboard/clipboard</a></p><p id="c2ef175d-7cdd-40a4-a62b-fcb2db0382d6" class=""><mark class="highlight-gray">Copyright (c) 2015-present, Facebook, Inc.</mark></p><p id="a2fd39bd-8dd8-4470-9d9a-69ff0b68803b" class=""><mark class="highlight-gray">MIT License</mark></p><p id="c16f40e0-ddd8-4ecc-9f0e-1e5b37f7abd5" class="">
+</p><p id="c890e9de-c3e7-416f-a7e1-bcb4f995f8c7" class=""><strong><strong>@craftzdog/react-native-buffer</strong></strong></p><p id="9ed37520-96fa-484d-a7c5-3b20cfd868a7" class=""><a href="https://github.com/craftzdog/react-native-buffer">https://github.com/craftzdog/react-native-buffer</a></p><p id="c6a738ee-4a94-43f1-8bdf-21db4a93cdfc" class=""><mark class="highlight-gray">Copyright (c) Feross Aboukhadijeh, and other contributors.</mark></p><p id="b210f70f-6eab-4d7b-8550-baddd4bdcd26" class=""><mark class="highlight-gray">MIT License</mark></p><p id="8bce1c30-adde-4b5a-a3b7-4853919f1bda" class="">
+</p><p id="a782ba1d-8faf-4e94-8b73-7b3d7d256b78" class=""><strong><strong>@react-native-google-signin/google-signin</strong></strong></p><p id="9674c9fd-00e3-4c71-a378-c12aa9019c19" class=""><a href="https://github.com/react-native-google-signin/google-signin">https://github.com/react-native-google-signin/google-signin</a></p><p id="c7a01afd-f2ca-4306-bf02-8984a0649967" class=""><mark class="highlight-gray">Copyright (c) 2015 Apptailor</mark></p><p id="38c12ee7-544b-43d5-a953-eaf7c6ca39ce" class=""><mark class="highlight-gray">MIT License</mark></p><p id="eee1f9f0-7eaa-4b7c-a468-5fb3bed9fc98" class="">
+</p><p id="16573e36-c87a-4d3d-91ff-46b9be162aec" class=""><strong>@react-native-firebase/app</strong></p><p id="965d6ea6-e876-46b5-a12d-2a15f9210ba1" class=""><strong>@react-native-firebase/messaging</strong></p><p id="baf19c8e-2677-40c8-b37c-cea2353bf02e" class=""><strong>@react-native-firebase/dynamic-links</strong></p><p id="2959ac70-705b-413f-a080-47c38b6da997" class=""><a href="https://github.com/invertase/react-native-firebase/tree/main">https://github.com/invertase/react-native-firebase/tree/main</a></p><p id="a4503842-d781-467d-baa5-565571021704" class=""><mark class="highlight-gray">Copyright (c) 2016-present Invertase Limited &lt;oss@invertase.io&gt;</mark></p><p id="ffe3cb37-539d-4b06-aaeb-6b48121d7c08" class=""><mark class="highlight-gray">Apache-2.0</mark></p><p id="d2ad45f7-12a5-4aa6-a23a-9616310ef842" class="">
+</p><p id="71bd0f24-7984-453c-869c-3c8cecb5cde7" class=""><strong>@react-native-async-storage/async-storage</strong></p><p id="3ad074a6-67b2-40c7-b197-5c4b5df69bbb" class=""><a href="https://github.com/react-native-async-storage/async-storage">https://github.com/react-native-async-storage/async-storage</a></p><p id="2f1ec215-21ef-42cf-bb60-5ea6da34beb2" class=""><mark class="highlight-gray">Copyright (c) 2015-present, Facebook, Inc.</mark></p><p id="9804df2c-4376-47ce-ae83-ce1dc67598b6" class=""><mark class="highlight-gray">MIT License</mark></p><p id="2ad5f50d-3792-42a4-9d06-621a208f9e87" class="">
+</p><p id="ff4d4770-0ca8-46f5-a2ed-1a206d58c229" class=""><strong>@notifee/react-native</strong></p><p id="43e1e4a9-3203-4a8a-8bb2-269f51b4cbed" class=""><a href="https://github.com/invertase/notifee">https://github.com/invertase/notifee</a></p><p id="2c85f677-339d-4244-8adb-63be0754dc6a" class=""><mark class="highlight-gray">Copyright 2020 - 2021 © Invertase Limited</mark></p><p id="ac2a4b20-d08e-4a99-b718-aa98083b0bae" class=""><mark class="highlight-gray">Apache License 2.0</mark></p><p id="00c0fc19-70b0-4b0a-a17f-ea4b41f68ef3" class="">
+</p><p id="64f24908-e10d-4e04-97d1-4aa63ac518bc" class=""><strong>@react-native-voice/voice</strong></p><p id="84be594b-f8fc-4627-abbe-ab1785e82949" class=""><a href="https://github.com/react-native-voice/voice">https://github.com/react-native-voice/voice</a></p><p id="e0a3ccd9-303f-44a6-8caf-d2c09a3794c9" class=""><mark class="highlight-gray">Copyright (c) 2018 Sam Wenke</mark></p><p id="f7f7dab0-be64-414c-8545-413d88fe9250" class="block-color-gray">The MIT License (MIT)</p><p id="8515e762-ee6c-4633-a622-44e2531703bf" class="block-color-gray">
+</p><p id="cdda358c-a522-4dce-a609-fe42f7066691" class=""><strong>@react-navigation/bottom-tabs
+@react-navigation/core
+@react-navigation/native
+@react-navigation/stack</strong></p><p id="dcf00f6c-e9e8-488e-b0c7-b9483ed56472" class=""><a href="https://github.com/react-navigation/react-navigation">https://github.com/react-navigation/react-navigation</a></p><p id="6b0010bb-0afd-4e57-acd5-910dff9aeaa7" class=""><mark class="highlight-gray">Copyright (c) React Navigation</mark></p><p id="529af4d1-50a4-41e1-9ca6-e466c7a78c4d" class=""><mark class="highlight-gray">MIT License</mark></p><p id="9ffaf056-9c8c-483e-bb6b-79548b3ac271" class="">
+</p><p id="d6ef1334-d971-4216-98ec-105dd9f5dbde" class=""><strong>axios</strong></p><p id="78d94c53-f694-4103-9d6a-a94e1d33226d" class=""><a href="https://axios-http.com/">https://axios-http.com/</a></p><p id="cc3d832d-2d93-4963-91f3-9e87c606a9c6" class=""><mark class="highlight-gray">Copyright © 2014-present Matt Zabriskie.</mark></p><p id="4eaba80c-22cc-47d5-9ade-9cebdd993fae" class=""><mark class="highlight-gray">MIT License</mark></p><p id="576b4f5e-17f3-4f59-8821-a1af6235e1d4" class="">
+</p><p id="1381316a-52e1-4551-a83b-110b414ce968" class=""><strong>babel-plugin-module-resolver</strong></p><p id="595b848d-0c58-43d8-aecf-5ce35a52633e" class=""><a href="https://github.com/tleunen/babel-plugin-module-resolver">https://github.com/tleunen/babel-plugin-module-resolver</a></p><p id="72cba0e4-b159-4e87-afd8-87ca185921aa" class=""><mark class="highlight-gray">Copyright (c) 2015 Tommy Leunen </mark><mark class="highlight-gray"><a href="mailto:tommy.leunen@gmail.com">tommy.leunen@gmail.com</a></mark><mark class="highlight-gray"> (tommyleunen.com)</mark></p><p id="09b300b7-08df-4df3-b11b-48337d11021e" class=""><mark class="highlight-gray">MIT License</mark></p><p id="411dd606-05fc-4def-bd9d-693019fb767b" class="">
+</p><p id="79e311dc-008f-40eb-9be2-5ece2b5bba7c" class=""><strong>lottie-react-native</strong></p><p id="bda09753-c0c7-4320-8d1f-477160f683a4" class=""><a href="https://github.com/lottie-react-native/lottie-react-native">https://github.com/lottie-react-native/lottie-react-native</a></p><p id="c44fd377-de00-4e51-9c9d-288ccd6b57d0" class=""><mark class="highlight-gray">Copyright (c) 2018 Sam Wenke</mark></p><p id="ed86b1b5-e417-40a7-80cf-f9c828631949" class=""><mark class="highlight-gray">The MIT License (MIT)</mark></p><p id="f431b47b-106f-41c8-92f5-8bf179122c95" class="">
+</p><p id="994e5000-a700-4051-af82-0ee6b47833d5" class=""><strong>react</strong></p><p id="4fa784eb-5347-4513-afb9-a9524c7baeb8" class=""><a href="https://reactjs.org/">https://reactjs.org/</a></p><p id="bcfadfa1-5c5b-4689-b65b-a07cc70d3197" class=""><mark class="highlight-gray">Copyright © 2022 Meta Platforms, Inc.</mark></p><p id="18f76cf6-b6ba-4d35-89da-2575f3d2c2e0" class=""><mark class="highlight-gray">MIT License</mark></p><p id="830adf25-bca1-4c37-adda-8ab393900d84" class="">
+</p><p id="46357aa9-e08a-4c5e-b339-0969a0d78fed" class=""><strong>react-native</strong></p><p id="f591c3ce-a925-44d1-96a4-ee9439915c84" class=""><a href="https://github.com/facebook/react-native">https://github.com/facebook/react-native</a></p><p id="f9af9c80-72b2-4cec-b124-638dc8c50dbc" class=""><mark class="highlight-gray">Copyright © 2022 Meta Platforms, Inc.</mark></p><p id="aa6391a1-a181-40bc-9884-a12783a7b389" class=""><mark class="highlight-gray">MIT License</mark></p><p id="3348a529-2ae6-4b81-9261-366c60208bd3" class="">
+</p><p id="52cde7d2-d6bf-4db0-9250-0ac357937363" class=""><strong>react-native-device-info</strong></p><p id="4ba7fb5f-0a97-4106-9769-2ffd9ff26bc7" class=""><a href="https://github.com/react-native-device-info/react-native-device-info">https://github.com/react-native-device-info/react-native-device-info</a></p><p id="f3e35896-db1a-4dcc-91e5-694a1c5ebe4f" class=""><mark class="highlight-gray">Copyright (c) 2015 Rebecca Hughes</mark></p><p id="83526b5f-390a-449f-8d4b-5d31bb6f150e" class=""><mark class="highlight-gray">MIT License</mark></p><p id="48d27491-a34f-4aa0-91f9-1969d860059f" class="">
+</p><p id="6c0612b8-ac8b-4faa-ba15-1c7f0808796b" class=""><strong>react-native-dropdown-picker</strong></p><p id="56841633-b9fe-41fe-b5c3-7f1fe6606da4" class=""><a href="https://github.com/hossein-zare/react-native-dropdown-picker">https://github.com/hossein-zare/react-native-dropdown-picker</a></p><p id="48d2f14c-4dfa-4cff-80da-72c19fcfa093" class=""><mark class="highlight-gray">Copyright © 2022 React Native Dropdown Picker.</mark></p><p id="1d7a24f0-682d-4ebc-89de-633bb259bc15" class=""><mark class="highlight-gray">MIT License</mark></p><p id="37afd71c-4819-4201-939e-5bc4e68191bd" class="">
+</p><p id="2f767c42-22d1-4b40-a76a-7c9be82a2d34" class=""><strong>react-native-fast-image</strong></p><p id="19fe10cc-4bdf-469f-8a49-c63f20daf940" class=""><a href="https://github.com/DylanVann/react-native-fast-image">https://github.com/DylanVann/react-native-fast-image</a></p><p id="56d111c1-df34-4538-a832-6e08f82c418c" class=""><mark class="highlight-gray">Copyright (c) 2017 Dylan Vann</mark></p><p id="37439857-43e8-41a0-8fca-7ce6983cd0f7" class=""><mark class="highlight-gray">MIT License</mark></p><p id="3c6c5517-c95c-481c-b414-41088e4ca8e3" class="">
+</p><p id="1fbbf1df-505d-4a09-90d2-19c6433803e1" class=""><strong>react-native-gesture-handler</strong></p><p id="297a60b8-2d53-48b2-a6f0-41fbe5ffffe5" class=""><a href="https://github.com/software-mansion/react-native-gesture-handler">https://github.com/software-mansion/react-native-gesture-handler</a></p><p id="81d056f2-79f2-44c8-b9b1-9dcfcbd84e52" class=""><mark class="highlight-gray">Copyright (c) 2016 Software Mansion &lt;swmansion.com&gt;</mark></p><p id="c17d0353-9104-49c0-ba46-153ad6b7719b" class=""><mark class="highlight-gray">MIT License</mark></p><p id="4e4e8e9b-750c-432f-8e94-0cf459b9bb2a" class="">
+</p><p id="f116fa84-cc25-406f-a49f-5a67aa9849e8" class=""><strong>react-native-iap</strong></p><p id="338cc1ab-897b-4e8e-8d7d-050a64608f4f" class=""><a href="https://github.com/dooboolab/react-native-iap">https://github.com/dooboolab/react-native-iap</a></p><p id="f574d598-39a6-45df-b134-1831eeddfe4c" class=""><mark class="highlight-gray">Copyright (c) 2017-2021 dooboolab</mark></p><p id="fddff78f-067b-427c-a012-9c93a7bf92b6" class=""><mark class="highlight-gray">MIT License</mark></p><p id="a7f656b2-c812-4964-b821-c00ae24589e1" class="">
+</p><p id="3763ca01-be27-41b8-95dc-90ad2b28e3b6" class=""><strong>react-native-iphone-x-helper</strong></p><p id="a3c8d240-1657-493c-a749-7b466b8b1851" class=""><a href="https://github.com/ptelad/react-native-iphone-x-helper">https://github.com/ptelad/react-native-iphone-x-helper</a></p><p id="799094a3-0447-49e2-b71a-1c706d460a99" class=""><mark class="highlight-gray">Copyright (c) 2017 Elad Gil</mark></p><p id="97323f02-5334-4168-82b2-1545322e59e1" class=""><mark class="highlight-gray">MIT License</mark></p><p id="4e1f6f88-aa43-486b-b257-e7688ec134f3" class="">
+</p><p id="ba4486aa-549e-4eee-a451-831ac984be90" class=""><strong>react-native-safe-area-context</strong></p><p id="75ac6047-71a9-416b-a805-8ff94a875c77" class=""><a href="https://github.com/th3rdwave/react-native-safe-area-context">https://github.com/th3rdwave/react-native-safe-area-context</a></p><p id="754f1b36-2e55-4294-8fd6-cf8c9d3963dd" class=""><mark class="highlight-gray">Copyright (c) 2019 Th3rd Wave</mark></p><p id="88285c50-2909-4fcc-ad64-0a48c7773eda" class=""><mark class="highlight-gray">MIT License</mark></p><p id="5cd5533a-0014-48e4-8f7a-5e6d24cfd909" class="">
+</p><p id="eb938126-b716-4ab0-befc-8a11ec657e27" class=""><strong>react-native-safearea-height</strong>
+<a href="https://github.com/devym-37/react-native-safearea-height">https://github.com/devym-37/react-native-safearea-height</a></p><p id="879e3364-50c0-4072-9897-210ccbf53a5c" class=""><mark class="highlight-gray">Copyright (c) 2017-present Dmitry Patsura </mark><mark class="highlight-gray"><a href="mailto:talk@dmtry.me">talk@dmtry.me</a></mark><mark class="highlight-gray"> </mark><mark class="highlight-gray"><a href="https://github.com/ovr">https://github.com/ovr</a></mark></p><p id="6aef2598-1538-45ff-ae45-594cd8876522" class=""><mark class="highlight-gray">MIT License</mark></p><p id="52099296-bd82-4c41-9dc7-02b239a02448" class="">
+</p><p id="391831b0-270c-4599-bb0b-245dfee3e8f7" class=""><strong>react-native-screens</strong></p><p id="9ecb6e50-43f8-4b3c-bdc5-8ff4a77c7c71" class=""><a href="https://github.com/software-mansion/react-native-screens">https://github.com/software-mansion/react-native-screens</a></p><p id="e56af761-568d-4c1a-873f-5b604e18be9c" class=""><mark class="highlight-gray">Copyright (c) 2018 Software Mansion &lt;swmansion.com&gt;</mark></p><p id="16322ca3-f66f-4812-9653-d3d6b8d99ec5" class=""><mark class="highlight-gray">MIT License</mark></p><p id="2147c8f1-aca2-4458-bd9d-0add069b570f" class="">
+</p><p id="b46472ec-832c-46e5-b066-e34eb85ead7b" class=""><strong>react-native-simple-toast</strong></p><p id="e9e0af73-da2d-49e3-b118-94d0f7bd4d57" class=""><a href="https://github.com/vonovak/react-native-simple-toast">https://github.com/vonovak/react-native-simple-toast</a></p><p id="a6cda0bd-f35d-42ef-8d0a-1c15781526e7" class=""><mark class="highlight-gray">Copyright (c) </mark><mark class="highlight-gray"><a href="https://github.com/vonovak">vonovak</a></mark></p><p id="41dd9a92-1304-4c7e-b253-9387fcd2a4c9" class=""><mark class="highlight-gray">MIT License</mark></p><p id="9b27a4fa-7440-45de-b2e3-203a6d12232f" class="">
+<strong>react-native-sound</strong>
+<a href="https://github.com/zmxv/react-native-sound">https://github.com/zmxv/react-native-sound</a>    </p><p id="589ed83b-0a40-47cf-ada9-a87979a09599" class="block-color-gray">Copyright (c) 2015 Zhen Wang</p><p id="12377512-7285-4526-882d-d20373f636c5" class="block-color-gray">The MIT License (MIT)</p><p id="4fe70445-6508-4919-95f0-e10ae407e67a" class="">
+</p><p id="7b01da11-d413-4e68-b036-f2645b92f9ad" class=""><strong>react-native-svg</strong></p><p id="4fe2c750-0c86-43d5-8d35-f4024675be53" class=""><a href="https://github.com/software-mansion/react-native-svg">https://github.com/software-mansion/react-native-svg</a></p><p id="a1ca2970-eed1-47ce-8e64-8100a18dfe49" class=""><mark class="highlight-gray">Copyright (c) [2015-2016] [Horcrux]</mark></p><p id="bd8d4187-c9b8-44aa-bd79-eda9dde48e43" class=""><mark class="highlight-gray">The MIT License (MIT)</mark></p><p id="1223b29d-4c97-4f99-ae77-cee3eda1052c" class="">
+</p><p id="4a68bda1-4399-4cb7-a757-588e1b934367" class=""><strong>react-native-vector-icons</strong>
+<a href="https://github.com/oblador/react-native-vector-icons">https://github.com/oblador/react-native-vector-icons</a></p><p id="f69d6cc9-1a01-4e66-a8e2-3e9d62d454ed" class=""><mark class="highlight-gray">Copyright (c) 2015 Joel Arvidsson</mark></p><p id="7d82f870-8876-438d-b80f-c166c61a0f97" class=""><mark class="highlight-gray">The MIT License (MIT)</mark></p><p id="35cbe269-633d-4b7b-ab32-f1842cb9b0ca" class="">
+</p><p id="f5c32791-20b8-4cfc-805a-82a1f106347a" class=""><strong>react-native-webview</strong></p><p id="419c339a-8419-48b1-ba3d-14e009ad46c3" class=""><a href="https://github.com/react-native-webview/react-native-webview">https://github.com/react-native-webview/react-native-webview</a></p><p id="ab3cf545-9e92-4a0a-8378-0ad3c7526ac7" class=""><mark class="highlight-gray">Copyright (c) 2015-present, Facebook, Inc.</mark></p><p id="eb0c1fea-dcc5-4790-8f61-eeee5bb3200e" class=""><mark class="highlight-gray">MIT License</mark></p><p id="48166855-ca1b-481e-8e0a-157ef941bdac" class="">
+</p><p id="f53dfd0f-3bd5-4958-8ed0-c7e2db3e18ad" class=""><strong>react-query</strong></p><p id="7ec5b27c-f8a2-4460-ac02-8c74ac20ee13" class=""><a href="https://github.com/TanStack/query">https://github.com/TanStack/query</a></p><p id="417dc4d3-01d2-428e-8074-3b5c852b241f" class=""><mark class="highlight-gray">Copyright (c) 2021-present Tanner Linsley</mark></p><p id="fea924d2-a68b-4da0-8e5c-ed243f9f3feb" class=""><mark class="highlight-gray">MIT License</mark></p><p id="c5b66d24-69ac-43ce-bb28-605c2883810f" class="">
+</p><p id="68d73478-3f0a-424b-93c0-f934da87f96b" class=""><strong>recoil</strong></p><p id="bdaf0f73-2e21-4c15-b64d-5eee2cbd8667" class=""><a href="https://recoiljs.org/">https://recoiljs.org/</a></p><p id="39303553-81aa-48f6-9531-8c6191d011e5" class=""><a href="https://github.com/facebookexperimental/Recoil">https://github.com/facebookexperimental/Recoil</a></p><p id="eff1a327-b053-4569-a778-ebd864c5d8f5" class=""><mark class="highlight-gray">MIT License</mark></p><p id="1ee712df-8910-4a68-96aa-78f2485e8063" class="">
+</p><p id="b44dd01b-a8d6-44f5-b442-beb09f03dbb7" class=""><strong> rn-fetch-blob</strong></p><p id="358994b3-cc87-4a69-b5dc-ae178ccdedea" class=""><a href="https://github.com/joltup/rn-fetch-blob">https://github.com/joltup/rn-fetch-blob</a></p><p id="6aa6aa85-857f-444d-93e1-c385e1843304" class=""><mark class="highlight-gray">Copyright (c) 2017 </mark><mark class="highlight-gray"><a href="mailto:xeiyan@gmail.com">xeiyan@gmail.com</a></mark></p><p id="54c4af01-3f59-47e0-a630-36dbe836738b" class=""><mark class="highlight-gray">MIT License</mark></p><p id="c7c59785-3f0b-41ce-9dd9-ece94589fe14" class="">
+<strong>string-similarity</strong>
+<a href="https://www.npmjs.com/package/string-similarity">https://www.npmjs.com/package/string-similarity</a></p><p id="b47b077f-75fa-4d83-804e-ecb997004212" class=""><mark class="highlight-gray">Copyright (c) 2018 Akash Kurdekar</mark></p><p id="6731937e-5522-43ea-922b-328a47724d3b" class=""><mark class="highlight-gray">MIT License</mark></p><p id="ff902f39-c5e0-48ad-a145-8aead31c2bd2" class="">
+</p><p id="d1760efa-4e5a-4ec7-809a-cdbb8489d1ef" class=""><strong>styled-components</strong></p><p id="e071abac-252f-40b6-8e59-053e08077b4b" class=""><a href="https://github.com/styled-components/styled-components">https://github.com/styled-components/styled-components</a></p><p id="2b2c9856-8b75-4d6e-8454-b164dd6f90cd" class=""><mark class="highlight-gray">Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber</mark></p><p id="150d1cc0-992b-494e-a048-ecf43c70e338" class=""><mark class="highlight-gray">MIT License</mark></p><p id="2e81d7e8-f68d-4d7d-bd13-67efc6b472c9" class="">
+</p><p id="240bc95c-6e40-4bf7-bf55-5aebe7cfe0a3" class=""><strong><strong>damerau-levenshtein</strong></strong></p><p id="96bb6651-1c06-41e4-ab09-ceff0aefd284" class=""><a href="https://github.com/tad-lispy/node-damerau-levenshtein">https://github.com/tad-lispy/node-damerau-levenshtein</a></p><p id="cacd3e73-bec3-4e5a-a4f7-dd9b05fd7c9b" class=""><mark class="highlight-gray">Copyright (c) 2018, Tadeusz Łazurski</mark></p><p id="e38a5150-0172-4339-b8b0-99b6c5ba3ea6" class=""><mark class="highlight-gray">BSD 2-Clause License</mark></p><p id="c911b882-ab8c-41ce-906d-ef84ced31573" class="">
+</p><p id="0427b876-a2d1-4559-aede-caa69850b836" class=""><strong>hangul-romanization</strong></p><p id="1d9636c0-8ca2-497b-8acb-dfcd02433708" class=""><a href="https://github.com/Tyriar/hangul-romanization">https://github.com/tad-lispy/node-damerau-levenshtein</a></p><p id="1f468faa-af1c-4e58-95d1-713d5ba58cb9" class=""><mark class="highlight-gray">Copyright (c) 2016, Daniel Imms (</mark><mark class="highlight-gray"><a href="http://www.growingwiththeweb.com/">http://www.growingwiththeweb.com</a></mark><mark class="highlight-gray">)</mark></p><p id="49834e02-fc3c-418b-a540-39c932b83738" class=""><mark class="highlight-gray">The MIT License (MIT)</mark></p><p id="67b8a563-be59-4bcc-9ad6-d60a4588e3a5" class="">
+</p><p id="25ee4810-0dbc-423d-8200-00a9228842a2" class=""><strong>jwt-decode</strong></p><p id="c5a2633a-8612-45bd-9ee6-317b1bb1c130" class=""><a href="https://github.com/auth0/jwt-decode">https://github.com/auth0/jwt-decode</a></p><p id="d837183e-c1be-4a41-bd42-cdb9a14e6a28" class=""><mark class="highlight-gray">Copyright (c) 2015 Auth0, Inc. &lt;support@auth0.com&gt; (http://auth0.com)</mark></p><p id="06f4d433-fce5-4ae6-9d9b-6f4e412acaef" class=""><mark class="highlight-gray">MIT License</mark></p><p id="14148a17-bc58-4401-a01e-ab9f3bcf751a" class="">
+</p><p id="69c926c9-1141-41fd-bc88-8c5e773a2f54" class=""><strong>lodash</strong></p><p id="57fb5e21-50d9-47be-90e0-1b454f6670b1" class=""><a href="https://github.com/lodash/lodash">https://github.com/lodash/lodash</a></p><p id="8c28352f-5567-40cf-a9f7-b89170f1069a" class=""><mark class="highlight-gray">Copyright JS Foundation and other contributors &lt;https://js.foundation/&gt;</mark></p><p id="bd6b0cd8-ba1f-4d7c-8d88-f7093bc2b903" class=""><mark class="highlight-gray">MIT License</mark></p><p id="fc7deeaa-adab-4ed9-8f78-0fe3c9e815c5" class="">
+</p><p id="9398dd8d-0a4e-45cb-83d6-e87176a2d9ce" class=""><strong>react-native-linear-gradient</strong></p><p id="4c813896-1700-4cc6-a544-f72324c3d142" class=""><a href="https://github.com/react-native-linear-gradient/react-native-linear-gradient">https://github.com/react-native-linear-gradient/react-native-linear-gradient</a></p><p id="5f0365b2-881d-45cb-b7a6-16399af1159a" class=""><mark class="highlight-gray">Copyright (c) 2016 React Native Community</mark></p><p id="d6d42ecc-1ffa-4302-b1b8-d6a7bd207ae5" class=""><mark class="highlight-gray">MIT License</mark></p><p id="28743452-9084-4bf3-9c03-f4b245416f4c" class="">
+</p><p id="219a4ae8-350f-4048-9644-6d8ced4cc38c" class=""><strong>react-native-paper</strong></p><p id="98d4cf70-d377-42cd-b6bd-97f2154143b4" class=""><a href="https://github.com/callstack/react-native-paper">https://github.com/callstack/react-native-paper</a></p><p id="d9d1f7d7-4a25-46c5-897a-cf9d2c0fc1b1" class=""><mark class="highlight-gray">Copyright (c) 2017 Callstack</mark></p><p id="582a0033-73cc-4786-8452-f0c3d1771c2c" class=""><mark class="highlight-gray">MIT License</mark></p><p id="e3494627-0108-49e5-9318-317b3165e27e" class="">
+</p><p id="e092572c-6b9a-4b3a-a1f9-6f2aaf9ef6b6" class=""><strong>react-native-reanimated</strong></p><p id="055f4919-ad9d-4f9e-b861-6831464f112c" class=""><a href="https://github.com/software-mansion/react-native-reanimated">https://github.com/software-mansion/react-native-reanimated</a></p><p id="2026d431-27c8-4d1e-91eb-51b00856d943" class=""><mark class="highlight-gray">Copyright (c) 2016 Software Mansion &lt;swmansion.com&gt;</mark></p><p id="bd4433f9-993e-43ec-adad-722be35638e8" class=""><mark class="highlight-gray">MIT License</mark></p><p id="b2ca26ee-2025-45d7-8785-47cad7208b2e" class="">
+</p><hr id="836119e2-e129-4ef0-9da3-61fb4e114e28"/><h3 id="64ade29d-7eeb-4128-8b69-294826d18fca" class="">MIT License</h3><p id="489eb17f-1786-4d4f-b1d2-4dcc7fabaf70" class="block-color-gray">Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p><p id="263a4284-02bd-4ffa-82ac-5929c2bc4c71" class="block-color-gray">The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p><p id="bbb72382-5447-4aad-beee-c0ad769915c2" class="block-color-gray">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p><p id="4030300f-0467-42cb-902c-755304e5ec46" class="">
+</p><hr id="c19bcd3d-e304-492d-941c-ed5173c69c79"/><h3 id="0d54735a-7713-4c86-8a10-b5155d90b56a" class="">Apache License 2.0</h3><p id="896f1dc9-d353-4354-a760-58437d9bb36c" class="block-color-gray">Apache License
+Version 2.0, January 2004
+<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a></p><p id="4df47489-3cb3-457e-912f-043a3b5483b7" class="block-color-gray">TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p><ol type="1" id="e8c8d330-e890-4e69-93e4-26730b3d7fe9" class="block-color-gray numbered-list" start="1"><li>Definitions.<p id="fcefb6f7-a439-440c-abc1-cc820e1952ed" class="">&quot;License&quot; shall mean the terms and conditions for use, reproduction,
+and distribution as defined by Sections 1 through 9 of this document.</p><p id="2f2348df-2532-48e1-82a3-b07c8dc09424" class="">&quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+the copyright owner that is granting the License.</p><p id="5d4f431e-6130-40c7-856d-93e7da048962" class="">&quot;Legal Entity&quot; shall mean the union of the acting entity and all
+other entities that control, are controlled by, or are under common
+control with that entity. For the purposes of this definition,
+&quot;control&quot; means (i) the power, direct or indirect, to cause the
+direction or management of such entity, whether by contract or
+otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.</p><p id="d237db02-8349-4ca3-92ca-14b9c43e11c9" class="">&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+exercising permissions granted by this License.</p><p id="c9325c61-07f5-448d-93fd-8561867cad92" class="">&quot;Source&quot; form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation
+source, and configuration files.</p><p id="021d27de-1190-41cc-aca4-6955324ad310" class="">&quot;Object&quot; form shall mean any form resulting from mechanical
+transformation or translation of a Source form, including but
+not limited to compiled object code, generated documentation,
+and conversions to other media types.</p><p id="1944e8cd-92b8-4e53-9059-a25e3d58f331" class="">&quot;Work&quot; shall mean the work of authorship, whether in Source or
+Object form, made available under the License, as indicated by a
+copyright notice that is included in or attached to the work
+(an example is provided in the Appendix below).</p><p id="6e9742d0-1fb9-445b-bf04-f5749813301f" class="">&quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+form, that is based on (or derived from) the Work and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship. For the purposes
+of this License, Derivative Works shall not include works that remain
+separable from, or merely link (or bind by name) to the interfaces of,
+the Work and Derivative Works thereof.</p><p id="62693308-8b60-4769-b51a-244664d59987" class="">&quot;Contribution&quot; shall mean any work of authorship, including
+the original version of the Work and any modifications or additions
+to that Work or Derivative Works thereof, that is intentionally
+submitted to Licensor for inclusion in the Work by the copyright owner
+or by an individual or Legal Entity authorized to submit on behalf of
+the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems,
+and issue tracking systems that are managed by, or on behalf of, the
+Licensor for the purpose of discussing and improving the Work, but
+excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p><p id="5c26697b-b194-4f71-bd22-97ac3dfca360" class="">&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+on behalf of whom a Contribution has been received by Licensor and
+subsequently incorporated within the Work.</p></li></ol><ol type="1" id="1ef21554-8b9d-4074-83b8-8d25d674c460" class="block-color-gray numbered-list" start="2"><li>Grant of Copyright License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the
+Work and such Derivative Works in Source or Object form.</li></ol><ol type="1" id="8219b4e7-7b73-4153-a451-9fddb5821b05" class="block-color-gray numbered-list" start="3"><li>Grant of Patent License. Subject to the terms and conditions of
+this License, each Contributor hereby grants to You a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+(except as stated in this section) patent license to make, have made,
+use, offer to sell, sell, import, and otherwise transfer the Work,
+where such license applies only to those patent claims licensable
+by such Contributor that are necessarily infringed by their
+Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You
+institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work
+or a Contribution incorporated within the Work constitutes direct
+or contributory patent infringement, then any patent licenses
+granted to You under this License for that Work shall terminate
+as of the date such litigation is filed.</li></ol><ol type="1" id="81e8e7ec-323a-4f74-904d-ccd542b9a80b" class="block-color-gray numbered-list" start="4"><li>Redistribution. You may reproduce and distribute copies of the
+Work or Derivative Works thereof in any medium, with or without
+modifications, and in Source or Object form, provided that You
+meet the following conditions:<p id="990abe14-a89e-4e20-8894-6364098e0439" class="">(a) You must give any other recipients of the Work or
+Derivative Works a copy of this License; and</p><p id="cf2cfa82-a900-4eaa-b3fb-2a30dd19b6e9" class="">(b) You must cause any modified files to carry prominent notices
+stating that You changed the files; and</p><p id="69ab3afd-81a1-44b3-a726-ca7b8defbe0a" class="">(c) You must retain, in the Source form of any Derivative Works
+that You distribute, all copyright, patent, trademark, and
+attribution notices from the Source form of the Work,
+excluding those notices that do not pertain to any part of
+the Derivative Works; and</p><p id="3110ad9e-e90d-4b2b-ae6e-39fccf1214d9" class="">(d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+distribution, then any Derivative Works that You distribute must
+include a readable copy of the attribution notices contained
+within such NOTICE file, excluding those notices that do not
+pertain to any part of the Derivative Works, in at least one
+of the following places: within a NOTICE text file distributed
+as part of the Derivative Works; within the Source form or
+documentation, if provided along with the Derivative Works; or,
+within a display generated by the Derivative Works, if and
+wherever such third-party notices normally appear. The contents
+of the NOTICE file are for informational purposes only and
+do not modify the License. You may add Your own attribution
+notices within Derivative Works that You distribute, alongside
+or as an addendum to the NOTICE text from the Work, provided
+that such additional attribution notices cannot be construed
+as modifying the License.</p><p id="cd99fdfa-6348-4549-b6cc-1ecd68c085f8" class="">You may add Your own copyright statement to Your modifications and
+may provide additional or different license terms and conditions
+for use, reproduction, or distribution of Your modifications, or
+for any such Derivative Works as a whole, provided Your use,
+reproduction, and distribution of the Work otherwise complies with
+the conditions stated in this License.</p></li></ol><ol type="1" id="2a8b5229-1c6e-4bf5-86f3-b097f59d6306" class="block-color-gray numbered-list" start="5"><li>Submission of Contributions. Unless You explicitly state otherwise,
+any Contribution intentionally submitted for inclusion in the Work
+by You to the Licensor shall be under the terms and conditions of
+this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify
+the terms of any separate license agreement you may have executed
+with Licensor regarding such Contributions.</li></ol><ol type="1" id="32f4b3a8-c44e-4968-823b-274171311967" class="block-color-gray numbered-list" start="6"><li>Trademarks. This License does not grant permission to use the trade
+names, trademarks, service marks, or product names of the Licensor,
+except as required for reasonable and customary use in describing the
+origin of the Work and reproducing the content of the NOTICE file.</li></ol><ol type="1" id="1beacf98-ee01-4ab2-829e-dd8d2fd24842" class="block-color-gray numbered-list" start="7"><li>Disclaimer of Warranty. Unless required by applicable law or
+agreed to in writing, Licensor provides the Work (and each
+Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied, including, without limitation, any warranties or conditions
+of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+PARTICULAR PURPOSE. You are solely responsible for determining the
+appropriateness of using or redistributing the Work and assume any
+risks associated with Your exercise of permissions under this License.</li></ol><ol type="1" id="d59b0aec-cbf4-4c93-988f-f70e4c01d6e9" class="block-color-gray numbered-list" start="8"><li>Limitation of Liability. In no event and under no legal theory,
+whether in tort (including negligence), contract, or otherwise,
+unless required by applicable law (such as deliberate and grossly
+negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a
+result of this License or out of the use or inability to use the
+Work (including but not limited to damages for loss of goodwill,
+work stoppage, computer failure or malfunction, or any and all
+other commercial damages or losses), even if such Contributor
+has been advised of the possibility of such damages.</li></ol><ol type="1" id="ccf3ca2a-2541-4102-bb4d-9249065d7ef2" class="block-color-gray numbered-list" start="9"><li>Accepting Warranty or Additional Liability. While redistributing
+the Work or Derivative Works thereof, You may choose to offer,
+and charge a fee for, acceptance of support, warranty, indemnity,
+or other liability obligations and/or rights consistent with this
+License. However, in accepting such obligations, You may act only
+on Your own behalf and on Your sole responsibility, not on behalf
+of any other Contributor, and only if You agree to indemnify,
+defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason
+of your accepting any such warranty or additional liability.</li></ol><p id="d7e53946-a79a-4835-89af-16f6edf1820a" class="block-color-gray">END OF TERMS AND CONDITIONS</p><p id="79c3bea8-ba89-40d4-8024-045630db21c4" class="block-color-gray">APPENDIX: How to apply the Apache License to your work.</p><p id="4842916e-488b-4a06-a2a6-7299c19e7650" class="block-color-gray">  To apply the Apache License to your work, attach the following
+  boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+  replaced with your own identifying information. (Don&#x27;t include
+  the brackets!)  The text should be enclosed in the appropriate
+  comment syntax for the file format. We also recommend that a
+  file or class name and description of purpose be included on the
+  same &quot;printed page&quot; as the copyright notice for easier
+  identification within third-party archives.</p><p id="0e014515-fe7c-4114-923a-6d918ebb30d0" class="block-color-gray">Copyright [yyyy] [name of copyright owner]</p><p id="44186125-f062-4c10-af58-e678a5eb7a55" class="block-color-gray">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p><p id="a2118fc3-0a74-4478-b584-0041dff1c673" class="block-color-gray">http://www.apache.org/licenses/LICENSE-2.0</p><p id="57ce4d5b-27a1-411b-9d3c-feb843710b27" class="block-color-gray">Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p><p id="9c701069-ea81-4133-857b-450f2f5cf26c" class="">
+</p><hr id="d70bcd91-fbf2-4739-a82b-fd3d009821f2"/><h3 id="d2c98662-69a5-46f8-bf3c-557d84baa18f" class="">BSD 2-Clause License</h3><p id="52a24ad1-b8c1-4bbc-b2e9-df6203bbba39" class="">Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:</p><ul id="769edad1-718f-4fab-a977-8b1eab48bc1a" class="bulleted-list"><li style="list-style-type:disc">Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.</li></ul><ul id="0c121c7c-c797-4d6c-9c10-eb53e9f1b154" class="bulleted-list"><li style="list-style-type:disc">Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</li></ul><p id="275392b0-03f9-4e00-a6f8-5398423e885a" class="">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p><p id="caf7ab91-a925-40c6-8e79-73b4200d1203" class="">
+</p></div></article></body></html>

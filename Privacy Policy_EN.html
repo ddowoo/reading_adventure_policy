@@ -1,0 +1,708 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Privacy Policy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="769d4355-140b-45f0-93ca-59e8e3d4e420" class="page sans"><header><h1 class="page-title">Privacy Policy</h1><p class="page-description"></p></header><div class="page-body"><p id="9832a1d8-29f6-4b85-a327-314bdb4f3aca" class="">This Policy (the &quot;Policy&quot;) explains the way of treatment of the information which is provided or collected in the web sites on which this Policy is posted. In addition the Policy also explains the information which is provided or collected in the course of using the applications of the Company which exist in the websites or platforms of other company.</p><p id="3a23230d-0603-451a-b037-948db3a4eb60" class="">
+The Company is the controller of the information provided or collected in the websites on which this Policy is posted and in the course of using the applications of the Company which exist in the websites or platforms of other company.</p><p id="5a866715-eadf-4b53-961b-0b7b53673752" class="">
+Through this Policy, the Company regards personal information of the users as important and inform them of the purpose and method of Company&#x27;s using the personal information provided by the users and the measures taken by the Company for protection of those personal information.</p><p id="d0d9987b-a29a-4180-b1f1-d0140a5da972" class="">
+This Policy will be effective on the 19th day of July, 2023 and, in case of modification thereof, the Company will make public notice of it through posting it on the bulletin board of Company&#x27;s website (or individual notice through sending mails, fax or e-mails).</p><p id="9998a82d-249e-4100-983f-61b876fdf86c" class="">
+</p><h3 id="6504501e-940d-4163-8ac4-3662e9b2ed29" class="">1. Information to be collected and method of collection</h3><p id="a5471f7f-7907-4a7f-be5d-7ab36a3f8eb1" class=""><strong>(1) Personal information items to be collected</strong></p><p id="999dedda-bf74-47ec-a954-1a2ec4f225b3" class="">Personal information items to be collected by the Company are as follows:</p><p id="83dce4bf-7564-4b69-bdc0-bb041e74b013" class="">
+</p><ul id="27115512-5c3a-49b8-9d5b-148b83990fe8" class="bulleted-list"><li style="list-style-type:disc"><strong>Information provided by the users</strong></li></ul><p id="c5e4542c-28b7-4cba-bc6c-e9e27082edf1" class="">The Company may collect the information directly provided by the users.</p><table id="35d2d02d-378d-49d2-9425-558dca8ead69" class="simple-table"><thead class="simple-table-header"><tr id="41e49bfa-790c-4903-8b65-4bad2d15f64c"><th id="@cxw" class="simple-table-header-color simple-table-header" style="width:220px">Category</th><th id="ncMj" class="simple-table-header-color simple-table-header" style="width:474px"><strong>Items to be collected</strong></th></tr></thead><tbody><tr id="aa7095dd-0bb2-4abe-afe6-b1a1a4759db8"><td id="@cxw" class="" style="width:220px">Sign up with google account</td><td id="ncMj" class="" style="width:474px">(Required) Google ID, Name, Email address</td></tr><tr id="e4d5118f-8e75-481b-a7ef-3adc2b1ded09"><td id="@cxw" class="" style="width:220px">Sign up with apple account</td><td id="ncMj" class="" style="width:474px">(Required) Apple ID, Name, Email address</td></tr><tr id="c7a20df9-15ea-4b7e-8f86-6172d2796b21"><td id="@cxw" class="" style="width:220px">Use of service</td><td id="ncMj" class="" style="width:474px">(Required) Nickname, Nationality</td></tr></tbody></table><p id="1d78829f-1574-42d5-b2f9-fe7a684e06a8" class="">
+</p><ul id="813aa223-1db8-4d47-b387-a535c1138f30" class="bulleted-list"><li style="list-style-type:disc"><strong>Information collected while the users use services</strong></li></ul><p id="cf69af45-e6e9-4cb2-9f0b-ac669c983370" class="">Besides of information directly provided by the users, the Company may collect information in the course that the users use the service provided by the Company.</p><table id="b1a8208a-f8f0-4ab8-962b-919d543dcdb5" class="simple-table"><thead class="simple-table-header"><tr id="8a6db327-c93c-4f4d-b4a7-1475e2f7816a"><th id="@cxw" class="simple-table-header-color simple-table-header" style="width:220px">Category</th><th id="ncMj" class="simple-table-header-color simple-table-header" style="width:474px"><strong>Items to be collected</strong></th></tr></thead><tbody><tr id="d5156d14-0e0b-4154-9ab4-df845faacd7a"><td id="@cxw" class="" style="width:220px">Equipment information</td><td id="ncMj" class="" style="width:474px">Equipment identifier, operation system, hardware version, equipment set-up, type and set-up of browser and use information of website or application</td></tr><tr id="bc2ba41b-7f49-407e-9de2-8aeeac4e8fab"><td id="@cxw" class="" style="width:220px">Log information</td><td id="ncMj" class="" style="width:474px">IP address, log data, use time, internet protocol address, etc.</td></tr><tr id="7beae4fa-7adb-41e6-b589-35be7428662d"><td id="@cxw" class="" style="width:220px">Other information</td><td id="ncMj" class="" style="width:474px">Preference, etc.</td></tr></tbody></table><p id="203a14eb-f4ba-46e8-bd6a-5ae402b5a990" class="">
+</p><p id="0c61df44-4f01-4d36-82d5-d1c6ff542576" class=""><strong>(2) Method of collection</strong></p><p id="23d1adad-df17-4403-a403-455a2b4b33b4" class="">The Company collects the information of users in a way of the followings:</p><ul id="09161ae0-dbce-4750-9f91-c3a5b695a850" class="bulleted-list"><li style="list-style-type:disc">application, webpage, written form, fax, telephone calling, e-mailing, tools for collection of created
+information</li></ul><ul id="848dd30f-0f47-4069-b662-305ad18cb644" class="bulleted-list"><li style="list-style-type:disc">provided by partner companies</li></ul><p id="9fb8802e-332d-440c-97f4-04e3ddb2ab37" class="">
+</p><h3 id="aec48064-56e6-4a1e-819a-56e4e5ad13fe" class="">2. Use of collected information</h3><p id="1f74f864-3785-4785-8d92-f4d1202fb5f7" class="">The Company uses the collected information of users for the following purposes:</p><ul id="77735ea0-4d2c-452f-b68c-307061478999" class="bulleted-list"><li style="list-style-type:disc">Member management and identification</li></ul><ul id="73bf15bf-cb1c-4a5f-9b49-d1ab5cf83ced" class="bulleted-list"><li style="list-style-type:disc">To detect and deter unauthorized or fraudulent use of or abuse of the Service</li></ul><ul id="c9b1dc51-a773-49a5-84da-26be45dd8272" class="bulleted-list"><li style="list-style-type:disc">Performance of contract, service fee payment and service fee settlement regarding provision
+of services demanded by the users</li></ul><ul id="6020bb59-f05d-411b-a5c8-86ef007d5fc5" class="bulleted-list"><li style="list-style-type:disc">Improvement of existing services and development of new services</li></ul><ul id="8a6ad2d7-8924-46a0-a1ba-6d04c51de7f9" class="bulleted-list"><li style="list-style-type:disc">Making notice of function of company sites or applications or matters on policy change</li></ul><ul id="cf17ea6a-b247-4370-8895-94afe1732139" class="bulleted-list"><li style="list-style-type:disc">Use of information with prior consent of the users (for example, utilization of marketing
+advertisement)</li></ul><ul id="0406fb70-4d3d-4791-9aa4-70e7ac9139c6" class="bulleted-list"><li style="list-style-type:disc">To make statistics on member’s service usage, to provide services based on statistical characteristics</li></ul><ul id="edd52da8-b3e1-4718-a1c1-ec60c7b173da" class="bulleted-list"><li style="list-style-type:disc">To comply with applicable laws or legal obligation</li></ul><p id="5d64fdbf-8c59-4e22-92b9-025cd500e59a" class="">
+</p><p id="e07ef0da-6f7d-4b08-9062-d968617f79e1" class="">The Company agrees that it will obtain a consent from the users, if the Company desires to use the information other than those expressly stated in this Policy.</p><p id="4d05c18d-a5e8-40fd-b4d3-7583966698a0" class="">
+</p><h3 id="e397a3d8-0e52-476c-a6af-57b653f75fa2" class="">3. Disclosure of collected information</h3><p id="77159edc-cad4-4795-8adc-1c53a3c9b4c7" class="">Except for the following cases, the Company will not disclose personal information with a 3rd party:</p><ul id="4ffd5658-3229-4bf5-938b-8c9d345d13f7" class="bulleted-list"><li style="list-style-type:disc"><strong>when the Company disclosing the information with its affiliates, partners and service providers;</strong><ul id="456fa7d3-a28e-4759-9a35-104f23f923ea" class="bulleted-list"><li style="list-style-type:circle">When the Company&#x27;s affiliates, partners and service providers carry out services such as bill payment, execution of orders and dispute resolution for and on behalf of the Company</li></ul></li></ul><ul id="f2d88f13-5ff4-4142-a1f2-a34a08e57416" class="bulleted-list"><li style="list-style-type:disc"><strong>when the users consent to disclose in advance;</strong><ul id="74aee3f8-4005-4761-87a5-508a8b500d09" class="bulleted-list"><li style="list-style-type:circle">when the user selects to be provided by the information of products and services of certain companies by sharing his or her personal information with those companies</li></ul><ul id="7da5b624-5ec9-4f2b-a72e-4d6b5ecd4197" class="bulleted-list"><li style="list-style-type:circle">when the user selects to allow his or her personal information to be shared with the sites or platform of other companies such as social networking sites</li></ul><ul id="f6745c5e-d2cd-475d-8b2e-5bd0e7c20722" class="bulleted-list"><li style="list-style-type:circle">other cases where the user gives prior consent for sharing his or her personal information</li></ul></li></ul><ul id="a9e93f55-a653-49f1-9de7-31502827fe6e" class="bulleted-list"><li style="list-style-type:disc"><strong>when disclosure is required by the laws:</strong><ul id="f66ba1a5-cc18-4161-bde5-83ca27ef4e6e" class="bulleted-list"><li style="list-style-type:circle">if required to be disclosed by the laws and regulations; or</li></ul><ul id="62a9e9dd-d483-497b-8e6c-13b44a34bc65" class="bulleted-list"><li style="list-style-type:circle">if required to be disclosed by the investigative agencies for detecting crimes in accordance with the procedure and method as prescribed in the laws and regulations</li></ul></li></ul><p id="94455ab8-bcfe-4ea3-b3ae-10fe627e67e0" class="">
+</p><h3 id="41f2340b-65d7-4fb6-a337-735e4e3aa17f" class="">4. Cookies, Beacons and Similar Technologies</h3><p id="c589696b-1d6c-4980-8be0-7c1b6d1c5bc0" class="">The Company may collect collective and impersonal information through &#x27;cookies&#x27; or &#x27;web beacons&#x27;. Cookies are very small text files to be sent to the browser of the users by the server used for operation of the websites of the Company and will be stored in the storage space of the user&#x27;s device.</p><p id="b772f879-d830-45cd-ad8b-6c190ba02520" class="">Web beacon is a small quantity of code which exists on the websites and e-mails. By using web beacons, we may know whether an user has interacted with certain webs or the contents of email.</p><p id="2b65242b-5eff-4ab0-b4bf-df316bb56609" class="">These functions are used for evaluating, improving services and setting-up users&#x27; experiences so that much improved services can be provided by the Company to the users</p><p id="61037034-22b0-4dae-8c85-04fd14bb1984" class="">
+</p><p id="ec325c0a-f378-4ed2-a90d-6119fd44babb" class=""><strong>(1) Purpose of using cookies</strong></p><p id="428ce5f5-796a-4e62-9114-180561d86a17" class="">We use cookies for the following purposes</p><ul id="73ccb02b-f9e0-45d3-8ada-4ecab034a257" class="bulleted-list"><li style="list-style-type:disc">Implementing the automatic login function</li></ul><ul id="8e9a07d0-9950-48fa-95e1-be0931d309c5" class="bulleted-list"><li style="list-style-type:disc">Analyze user access frequency or visit duration, etc.</li></ul><ul id="4840fa64-c3e9-48e8-88e4-479802cbb6ee" class="bulleted-list"><li style="list-style-type:disc">Identifying users&#x27; tastes and interests and checking usage history</li></ul><ul id="b552a345-5de2-4881-b562-df537a202af0" class="bulleted-list"><li style="list-style-type:disc">Providing targeted marketing and personalized services by participating in various events and identifying the number of visits, etc.</li></ul><p id="597b6e74-148f-4dce-920a-6eb4d96a7e16" class="">
+</p><p id="aba16735-841b-44c9-adb5-3c3724b70699" class=""><strong>(2) How to set cookies</strong></p><p id="3fb35cf9-c42c-4672-a23e-478117cdd1ef" class="">The users have an option for cookie installation. So, they may either allow all cookies by setting option in web browser, make each cookie checked whenever it is saved, or refuses all cookies to be saved: Provided that, if the user rejects the installation of cookies, it may be difficult for that user to use the parts of services provided by the Company.</p><p id="48085d0e-4dda-4be9-9282-73d673622060" class="">
+</p><h3 id="1d73699b-fff0-4f9a-917a-8853459663b2" class="">5. User’s right</h3><p id="97f2ec61-330f-42a8-9964-8f961db0d29a" class="">The users or their legal representatives, as main agents of the information, may exercise the following rights regarding the collection, use and sharing of personal information by the Company:</p><ul id="fbec7450-9568-45d0-9875-96c8103dfb0b" class="bulleted-list"><li style="list-style-type:disc">exercise right to access to personal information;</li></ul><ul id="654230b1-cf0b-41e9-8535-d76d0d7e38f2" class="bulleted-list"><li style="list-style-type:disc">make corrections or deletion;</li></ul><ul id="11521d7e-ee8a-4334-baf8-87d2861f09fe" class="bulleted-list"><li style="list-style-type:disc">make temporary suspension of treatment of personal information; or</li></ul><ul id="620b9298-5a10-410c-80f7-a61de7d6e366" class="bulleted-list"><li style="list-style-type:disc">request the withdrawal of their consent provided before</li></ul><p id="1282e0b4-da73-4849-8645-73f0aa0cb132" class="">
+</p><p id="2ba41a67-ce6e-4844-ae9a-459702e593bd" class="">If, in order to exercise the above rights, you, as an user, use the menu of &#x27;settings’ of application or contact the Company by sending a document or e-mails to the company(or person in charge of management of personal information or a deputy), the Company will take measures without delay: Provided that the Company may reject the request of you only to the extent that there exists either proper cause as prescribed in the laws or equivalent cause.</p><p id="035790be-1d51-4904-bbd5-23877f5cead3" class="">
+</p><h3 id="859c0170-b732-463d-9d86-488483527433" class="">6. Security</h3><p id="18ff1bf5-edfc-422f-abc3-0763fab43778" class="">The Company regard the security of personal information of uses as very important. The company constructs the following security measures to protect the users&#x27; personal information from any unauthorized access, release, use or modification</p><ul id="fd66f144-827e-459f-b194-87add8eb860c" class="bulleted-list"><li style="list-style-type:disc">Encryption of personal information<ul id="7cc6f4ac-5812-431d-a9d9-1ebe5ffe79b3" class="bulleted-list"><li style="list-style-type:circle">Transmit users&#x27; personal information by using encrypted communication zone</li></ul><ul id="1f0f7241-dbae-4d33-939e-860cd6d42a1b" class="bulleted-list"><li style="list-style-type:circle">Store important information such as passwords after encrypting it</li></ul></li></ul><ul id="ed529c55-b990-43e6-bd6a-3df16efb8237" class="bulleted-list"><li style="list-style-type:disc">Countermeasures against hacking<ul id="6ace0229-8c5c-45ea-ad6d-c948a58dd98d" class="bulleted-list"><li style="list-style-type:circle">Install a system in the zone the external access to which is controlled so as to prevent leakage or damage of users&#x27; personal information by hacking or computer virus</li></ul></li></ul><ul id="5d5a8f28-3841-4ce5-bed3-cdfc7799c194" class="bulleted-list"><li style="list-style-type:disc">Establish and execute internal management plan</li></ul><ul id="d6762100-fcd9-49ec-be33-4cac3f4c5c00" class="bulleted-list"><li style="list-style-type:disc">Install and operate access control system</li></ul><ul id="76e88346-2929-42a5-a55b-cfede12f5ed0" class="bulleted-list"><li style="list-style-type:disc">Take measures to prevent forging or alteration of access record</li></ul><p id="d55eab73-5f05-41c5-9c9e-d354fbdecb91" class="">
+</p><h3 id="f28d4490-8af4-4990-8dac-9000321d8ad7" class="">7. Protection of personal information of children</h3><p id="f2d7fd99-3321-48f5-a4a0-22b42fd5657e" class="">In principle, the Company does not collect any information from the children under 13 or equivalent minimum age as prescribed in the laws in relevant jurisdiction. The website, products and services of the Company are the ones to be provided to ordinary people, in principle. The website or application of the Company has function to do age limit so that children cannot use it and the Company does not intentionally collect any personal information from children through that function.</p><p id="c08d0e3a-b6e4-4ca0-b3fb-ffaab6085630" class="">
+</p><p id="c87fcfb1-fb4a-4f84-94e6-32b32ff6ed75" class="">However, if the Company collects any personal information from children under 13 or equivalent minimum age as prescribed in the laws in relevant jurisdiction for the services for unavoidable reason, the Company will go through the additional procedure of the followings for protecting that personal information of children:</p><ul id="78402d25-58d2-4dd9-9449-86a57559e57f" class="bulleted-list"><li style="list-style-type:disc">verify, to the extent that efforts are reasonably made, whether they are children of the age at which consent from their guardian is required and the consenting person is an authorized one.</li></ul><ul id="1d3ef6de-3192-42a5-8fab-63421a186783" class="bulleted-list"><li style="list-style-type:disc">obtain consent from the parents or guardian of children so as to collect personal information of children or directly send the information of products and services of the Company</li></ul><ul id="c92737cf-1d4c-4f74-a05e-c6709d222998" class="bulleted-list"><li style="list-style-type:disc">give the parents or guardian of children a notice of Company&#x27;s policy of privacy protection for children including the items, purpose and sharing of personal information collected</li></ul><ul id="05a91197-6602-41f6-a9ca-3a574fe5682f" class="bulleted-list"><li style="list-style-type:disc">grant to legal representatives of children a right to access to personal information of that children/correction or deletion of personal information/temporary suspension of treatment of personal information/ and request for withdrawal of their consent provided before</li></ul><ul id="9d36fc96-e723-42a0-8c3c-eeb8a588422a" class="bulleted-list"><li style="list-style-type:disc">limit the amount of personal information exceeding those necessary for participation in online activities</li></ul><p id="93e398d4-29ea-4e14-abab-41b4609aec3f" class="">
+</p><h3 id="ae2562ca-24c1-4ac1-824c-2862b5cb0249" class="">8. Modification of Privacy Protection Policy</h3><p id="0da188df-136d-4e8f-8da3-41779a2720e3" class="">The Company has the right to amend or modify this Policy from time to time and, in such case, the Company will make a public notice of it through bulletin board of its website (or through individual notice such as written document, fax or e-mail) and obtain consent from the users if required by relevant laws.</p><p id="48d47a10-3b64-40ea-a8a0-55b7b954100a" class="">
+</p><h3 id="d059d578-ab5b-4c4b-9c95-74fa2386307d" class="">9. Others</h3><p id="3625366a-0947-4c86-ab95-49849bfed162" class=""><strong>(1) Data transfer to other countries</strong></p><p id="6f13fdf1-37d9-4a51-910c-180444219542" class="">Considering it engages in global businesses, the Company may provide the users&#x27; personal information to the companies located in other countries for the purpose as expressly stated in this Policy. For the places where the personal information is transmitted, retained or processed, the Company takes reasonable measures for protecting those personal information.</p><p id="24d92589-a4e4-4d99-bd06-ef0d381a7e69" class="">In addition, when the personal information obtained from the European Union or Switzerland is used or disclosed, the Company may have to comply with the US-EU Privacy Shield and Swiss-US Privacy Shield, take other measures or obtain consent from users so far as those complies with the regulations of EU so as to use a standardized agreement provision approved by executing organizations of EU or securing proper safe measures.</p><p id="a98ba852-c39c-4a0e-9bc3-08929f4dfadc" class="">
+</p><p id="488b7461-821d-44cb-b6b6-a37f3dceda56" class=""><strong>(2) 3rd party&#x27;s sites and services</strong></p><p id="9ef2da39-85a7-4163-a4d1-92b2344bf7c4" class="">The website, product or service of the Company may include the links to the ones of a 3rd party and the privacy protection policy of the site of 3rd party may be different. Thus, it is required for the users to check additionally that policy of a 3rd party site linked to the site of the Company.</p><p id="a36172cb-a2aa-4bdb-932f-0615fd336365" class="">
+</p><p id="deb5f252-eb8a-475c-b710-33a7bc34fdd1" class=""><strong>(3) Guide for users residing in California</strong></p><p id="0e559ebd-4b5c-421b-bf44-7527e50b653d" class="">If the user resides in California, certain rights may be given. The Company prepare preventive measures necessary for protecting personal information of members so that the Company can comply with online privacy protection laws of California.</p><p id="9edf1e3e-1c7e-4c32-bc66-a6b5f34f9acc" class="">In case of leakage of personal information, an user may request the Company to check the leakage. In addition, all the users in the website of the Company, can modify their information at any time by using the menu for changing information by connecting their personal account.</p><p id="4c8a8820-0eff-4e11-a877-b99ce88ebde7" class="">Moreover, the Company does not trace the visitors of its website nor use any signals for &#x27;tracing prevent&#x27;. The Company will not collect and provide any personal identification information through ad services without consent of users.</p><p id="363bc38e-0d94-4098-816b-582e9335f88b" class="">
+</p><p id="c4b574a6-2c8d-4ec3-9e22-1d2d85308f0e" class=""><strong>(4) Guide for users residing in Korea</strong></p><p id="979b0119-aa86-440a-a5c1-37c688ea286a" class="">The Company guides several additional matters to be disclosed as required by the information network laws and personal information protection laws in the Republic of Korea as follows:</p><p id="abb14170-4299-4489-9d53-b4fe7eb4a5b6" class="">
+</p><ul id="24bd6457-6d8d-4816-ac67-0200ea28418d" class="bulleted-list"><li style="list-style-type:disc"><strong>Commission for collected personal information</strong></li></ul><p id="3be3b6ee-c128-4b2f-8976-bd3d1d28fa11" class="">For carrying out services, the Company commissions external professional companies (subcontractors) to process personal information as follows. This commissioned works for processing personal information is carried out by each subcontractor and service only if necessary for providing that service.</p><p id="6e8d9ff8-56b7-44e7-8f2c-dabba581f0a7" class="">In commissioning process of personal information, in order to secure safety of personal information , the Company supervises and ensure to expressly state in the agreement with subcontractors so that those subcontractors will safely process personal information by strictly complying with directions regarding personal information protection, keeping personal information secret, not disclosing it to a 3rd party and being liable for accidents and returning or destructing personal information upon termination of the commission or process.</p><table id="848a0417-d156-41bd-b0cb-034b73d0ac7d" class="simple-table"><thead class="simple-table-header"><tr id="97766d98-1738-4bcd-afea-3667ba6a2373"><th id="@cxw" class="simple-table-header-color simple-table-header" style="width:220px"><strong>Name of subcontractors</strong></th><th id="ncMj" class="simple-table-header-color simple-table-header" style="width:474px"><strong>Description of commissioned works</strong></th></tr></thead><tbody><tr id="b57d02bc-d7b6-4084-97bd-99eb22b6a778"><td id="@cxw" class="" style="width:220px">Google Play Store</td><td id="ncMj" class="" style="width:474px">Processing in-app payments</td></tr><tr id="6610e799-aa12-46d9-8e66-8d9ca1532586"><td id="@cxw" class="" style="width:220px">App Store(Apple)</td><td id="ncMj" class="" style="width:474px">Processing in-app payments</td></tr><tr id="ba1f468e-dc46-4945-8562-5016dadad0f4"><td id="@cxw" class="" style="width:220px">Amazon Web Services(AWS Kor)</td><td id="ncMj" class="" style="width:474px">Provision of cloud IT infrastructure</td></tr></tbody></table><p id="b58fda46-e6e9-49c3-adb4-2c4bbdd2360b" class="">
+</p><ul id="1b549ab5-f132-4707-8342-f68543b527c9" class="bulleted-list"><li style="list-style-type:disc"><strong>Period for retention and use of personal information</strong></li></ul><p id="f2a87210-29de-455c-b305-ff0947acd2cd" class="">In principle, the Company destructs personal information of users without delay when: the purpose of its collection and use has been achieved; the legal or management needs are satisfied; or users request: Provided that, if it is required to retain the information by relevant laws and regulations, the Company will retain member information for certain period as designated by relevant laws and regulations. The information to be retained as required by relevant laws and regulations are as follows:</p><table id="631e405b-dccc-4662-a7fe-6e692eab93f7" class="simple-table"><thead class="simple-table-header"><tr id="c3e16cba-859e-4445-bc26-70607b666ed9"><th id="@cxw" class="simple-table-header-color simple-table-header" style="width:388px"><strong>구분</strong></th><th id="ncMj" class="simple-table-header-color simple-table-header" style="width:322px"><strong>근거 법령</strong></th><th id="{pPI" class="simple-table-header-color simple-table-header" style="width:86px"><strong>보유 기간</strong></th></tr></thead><tbody><tr id="69337297-cfe8-4370-ba0b-010fdacff485"><td id="@cxw" class="" style="width:388px">Record regarding contract or withdrawal of subscription</td><td id="ncMj" class="" style="width:322px">The Act on Consumer Protection in Electronic Commerce</td><td id="{pPI" class="" style="width:86px">5 years</td></tr><tr id="142ab7ef-2cd5-4978-becb-e7a2aef4720d"><td id="@cxw" class="" style="width:388px">Record on payment and supply of goods</td><td id="ncMj" class="" style="width:322px">The Act on Consumer Protection in Electronic Commerce</td><td id="{pPI" class="" style="width:86px">5 years</td></tr><tr id="5f79f5eb-7408-416b-8d5f-79efed97c55c"><td id="@cxw" class="" style="width:388px">Record on consumer complaint or dispute treatment</td><td id="ncMj" class="" style="width:322px">The Act on Consumer Protection in Electronic Commerce</td><td id="{pPI" class="" style="width:86px">3 years</td></tr><tr id="b681a3bb-56e3-4896-b9e4-e2a9c811c9f3"><td id="@cxw" class="" style="width:388px">Record on collection/process, and use of credit information</td><td id="ncMj" class="" style="width:322px">The Act on Use and Protection of Credit Information</td><td id="{pPI" class="" style="width:86px">3 years</td></tr><tr id="707bcfaa-714b-4a2c-b473-1779befc4e4b"><td id="@cxw" class="" style="width:388px">Record on sign/advertisement</td><td id="ncMj" class="" style="width:322px">The Act on Consumer Protection in Electronic Commerce</td><td id="{pPI" class="" style="width:86px">6 months</td></tr><tr id="58ff5413-8d69-4efb-8408-37d50ba50ccd"><td id="@cxw" class="" style="width:388px">Log record of users such as internet/data detecting the place of user connection</td><td id="ncMj" class="" style="width:322px">The Protection of Communications Secrets Act</td><td id="{pPI" class="" style="width:86px">3 months</td></tr><tr id="5f806e5a-1369-4cf7-bd6a-131b74cc8f57"><td id="@cxw" class="" style="width:388px">Other data for checking communication facts</td><td id="ncMj" class="" style="width:322px">The Protection of Communications Secrets Act</td><td id="{pPI" class="" style="width:86px">12 months</td></tr></tbody></table><p id="a7c8567a-9e99-4b6e-bfc2-26df8feab439" class="">
+</p><ul id="b4bf0b9d-5f10-4641-b3d8-5407e718359a" class="bulleted-list"><li style="list-style-type:disc"><strong>Procedure and method of destruction of personal information</strong></li></ul><p id="f916ad8b-1879-4ed6-b524-2dd4163cf1a7" class="">In principle, the Company destructs the information immediately after the purposes of its collection and use have been achieved without delay: Provided that, if any information is to be retained as required by relevant laws and regulations, the Company retain it for the period as required by those laws and regulations before destruction and, in such event, the personal information which is stored and managed separately will never be used for other purposes. The Company destructs: hard copies of personal information by shredding with a pulverizer or incinerating it; and delete personal information stored in the form of electric file by using technological method making that information not restored.</p><p id="0d0396c4-d186-4dc3-8a35-6e113243917f" class="">
+</p><h3 id="672e375a-b966-4757-b025-40584c9f8a87" class="">10. Contact information of Company</h3><p id="387eb87e-4b20-4833-9bba-0dfe4ce1be64" class="">Please use one of the following methods to contact the Company should you have any queries in respect to this policy or wish to update your information:</p><ul id="efd9931e-eb74-4019-a94a-929f367dd30a" class="bulleted-list"><li style="list-style-type:disc">Company name : Ridify inc.<p id="c7a03bfe-a9a9-4f16-9d0b-85a3af6e0461" class="">Address : Room 221, 158, Bodeum-ro, Seo-gu, Incheon, Republic of Korea</p><p id="9d7fc0a8-104f-464f-b313-a64e19517896" class="">E-mail : support@ridify.co</p><p id="fcb6e286-83b7-4a18-97a7-535254b8bb1f" class="">
+</p></li></ul><p id="495c3f38-214b-4d62-8623-523d76a629a6" class="">The Company designates the following Data Protection Officer (DPO) in order to protect personal information of customers and deal with complaints from customers.</p><ul id="94e75add-aadc-4b8b-adc5-facd95d551f8" class="bulleted-list"><li style="list-style-type:disc">DPO of the Company : Dongwoo Park<p id="9ef96c5a-c10c-495f-9847-4e7cf0f5fdb8" class="">Address : Room 221, 158, Bodeum-ro, Seo-gu, Incheon, Republic of Korea</p><p id="6d402bb5-1338-4eee-9df3-1988e206514c" class="">E-mail : dw.park@ridify.co</p></li></ul><p id="e38aa0a1-e2b8-4fde-a9f5-3e1552bca758" class="">
+</p><h3 id="e528b548-fbc4-423f-842a-af9ebf62024d" class=""><strong>Provisions</strong></h3><p id="90246b9e-129d-4802-9f71-9efed8752732" class="">This Privacy Policy is effective as of August 7, 2023.</p></div></article></body></html>

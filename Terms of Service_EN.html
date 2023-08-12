@@ -1,0 +1,694 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Terms of Service</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a4c1ab6c-2850-4985-9fe8-33935fec3966" class="page sans"><header><h1 class="page-title">Terms of Service</h1><p class="page-description"></p></header><div class="page-body"><h2 id="816a7a89-9ee7-4540-9870-85880b15175f" class="">1. General Conditions</h2><h3 id="62c8fe98-a740-4f0c-92ea-74c1530e0288" class="">1.1 Purpose</h3><p id="6a85584d-9e01-4a10-9e05-9686655baec0" class="">
+</p><p id="02f52269-4292-4261-befb-740b3cd961d5" class="">These Terms and Conditions are intended to regulate the relationship between the Company and the Members regarding the contents, conditions of use, procedures, rights and obligations, and other necessary matters related to the Reading Adventure service (hereinafter referred to as &quot;Service&quot;) provided by Ridify inc. Furthermore, these Terms and Conditions apply to e-commerce related to the Service, including PC, mobile web, and mobile applications.</p><h3 id="4a389f25-5d5c-4f76-8db5-52eeb2f3a22c" class="">1.2 Definition and Interpretation of Terms</h3><p id="25100c11-2a35-441e-be86-a4ec7f6572f9" class="">The definitions of the terms used in these Terms and Conditions are as follows:</p><ol type="1" id="94c0e3bd-bf6b-4fa1-a5e4-2c8737a1c478" class="numbered-list" start="1"><li>&quot;Member&quot; means a person who agrees to these Terms and enters into a service contract and uses the Services provided by the Company.</li></ol><ol type="1" id="75592011-98a9-4d90-9ac6-94a4bfaabb70" class="numbered-list" start="2"><li>&quot;Contents&quot; means all the paid or free materials (applications, network services, etc.) produced by the Company in a digital format related to the service that can be used on mobile devices.</li></ol><ol type="1" id="da4a0740-1e39-4b59-88fd-74b59be40a53" class="numbered-list" start="3"><li>&quot;Application&quot; means any program that is downloaded or installed on a mobile device to use the service provided by the Company.</li></ol><ol type="1" id="f76e75b5-d341-4dec-a200-be666d02ebe6" class="numbered-list" start="4"><li>&quot;Paid Service&quot; means the services of the Company that members can use by paying a certain amount to the Company or accepting transaction or agreement conditions with the Company or a third party. However, affiliate services that have connected to the site through paid content providers or entered into a contract with the Company are not considered as the Company&#x27;s paid services, and these Terms and Conditions do not apply.</li></ol><ol type="1" id="156bb6fa-152d-40b7-b415-c6de5190a96e" class="numbered-list" start="5"><li>&quot;Payment&quot; means the act of paying a certain amount to the Company or a third party designated by the Company through various payment methods to use the paid services provided by the Company.</li></ol><h3 id="e18d7067-3096-46cf-87ac-21ccea511159" class="">1.3 Notice and Amendment of Terms and Conditions</h3><ol type="1" id="72c9ad70-e3aa-4874-b7a5-f82cede30b06" class="numbered-list" start="1"><li>The Company shall announce the contents of these Terms and Conditions, including the company name, business address, name of the representative, business registration number, and contact information, in a way that members can know through the initial screen of the site or application.</li></ol><ol type="1" id="38c316a7-9866-4aff-9e0a-5a59c948a671" class="numbered-list" start="2"><li>The Company may amend these Terms and Conditions within the scope that does not violate applicable laws, such as the Act on Regulation of Terms and Conditions and the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.</li></ol><ol type="1" id="8c3309e9-52e7-4c4e-9e10-5265223124da" class="numbered-list" start="3"><li>When the Company amends these Terms and Conditions, it shall notify its members of the application date, the revised content, and the reason for the revision through the above method at least seven days before the application date (30 days before the application date for changes that significantly affect the rights and obligations of members or changes that are unfavorable to members).</li></ol><ol type="1" id="0f71b18e-c5f9-40db-a741-99cdbfb868db" class="numbered-list" start="4"><li>When the Company announces the revised terms and conditions, if it also notifies that the lack of expression of agreement or refusal will be considered as an agreement, and if the member does not express their intention to refuse until the effective date of the revised terms and conditions, it is deemed that the member has agreed to the revised terms and conditions.</li></ol><ol type="1" id="890e7cb7-4b6d-4b38-b7fe-0fd226037c68" class="numbered-list" start="5"><li>If a member does not agree to the revised terms and conditions, the Company or the member may terminate the service contract.</li></ol><ol type="1" id="5df2e523-181c-4d0b-8602-3fe576266dbe" class="numbered-list" start="6"><li>The Company may establish separate terms and conditions or usage guidelines for specific services among the services provided by the Company or new policies related to the provision of services, and the Company shall go through a separate notification or agreement process with members regarding the application of such terms and conditions or usage guidelines when they are first applied. In this case, such terms and conditions or usage guidelines shall take precedence over these Terms and Conditions.</li></ol><p id="2b2cb6e1-824d-457b-a758-ebe5550da3e8" class="">
+</p><h3 id="692db4f4-55ac-4626-965d-61f7ce386144" class="">1.4 Effectiveness of Terms and Conditions</h3><p id="58e5d24e-ea60-46b8-80fa-1a4a15cf8539" class="">These terms and conditions take effect when a member agrees to the content of the terms and applies for membership, and the company accepts the application.</p><h3 id="78314c75-7678-4693-a843-63305632d400" class="">1.5 Application of Laws and Regulations</h3><p id="ba04aa51-a9f4-42cb-9651-9f64cc62fe64" class="">Any matters not specified in these terms and conditions shall be subject to the relevant laws and regulations, such as the Act on Promotion of Information and Communications Network Utilization and Information Protection, the Act on Consumer Protection in Electronic Commerce, the Act on Regulation of Terms and Conditions, the Commercial Act, and customs.</p><h3 id="4f8fa780-77f6-4f88-82d5-30f7d9106ea2" class="">1.6 Notice to Members</h3><p id="1915a42c-7d3d-4b6e-962a-85e62c1e4f4b" class="">When notifying members, the company may post on the relevant service page or use electronic mail, SMS, messenger, App push, etc. However, if the company notifies an unspecified number of members, it may use methods such as posting on the service page.</p><h3 id="89d9a3e8-3e53-439a-b4b3-e0e5eecc9e5b" class="">1.6 Protection of Personal Information</h3><p id="7cd548a7-7412-4f06-bce1-7848936fa36c" class="">The collection, use, storage, and transfer of members&#x27; personal information are generally based on the company&#x27;s privacy policy and the content notified when collecting personal information. The latest version of the company&#x27;s privacy policy is posted on the company&#x27;s homepage. The privacy policy may be modified or updated at the company&#x27;s discretion and is included in these terms and conditions by reference.</p><p id="5b8b1755-4bcc-4ea0-89d7-6bab50aaeca6" class="">
+</p><h2 id="6a431946-6d96-43e1-97fb-a7d72f589dd0" class=""><strong>2. Service Agreement and Obligations of Parties</strong></h2><h3 id="2b98c8ab-8f6f-4a31-9306-ec4f33834258" class="">2.1 <strong>Service Agreement through Membership Registration</strong></h3><ol type="1" id="905f0884-3548-4ca4-a52d-fc4b34078299" class="numbered-list" start="1"><li>Members can sign up for membership by going through the procedure according to the registration form set by the company and indicating their agreement to this service agreement.</li></ol><ol type="1" id="2f860195-1268-466c-bab0-41b0ec699f97" class="numbered-list" start="2"><li>The company registers members who apply for membership as stated in the first paragraph, unless they fall under any of the items in Article 9, Paragraph 1. If the company refuses or defers approval of a membership application, it will generally notify the applicant.</li></ol><ol type="1" id="a7d14fc3-b5c7-4ac0-8faf-59878f476266" class="numbered-list" start="3"><li>The time of establishment of the service agreement is when the company displays the completion message for membership registration in the application process.</li></ol><ol type="1" id="da12128e-ca85-40d8-be4f-8e437fc66d47" class="numbered-list" start="4"><li>Users under the age of 14 cannot become members.</li></ol><ol type="1" id="d2c66676-42bb-4890-b135-2d49b85bfe07" class="numbered-list" start="5"><li>Membership rights are exclusively granted to the individual who enters into the service agreement and cannot be authorized or transferred to others.</li></ol><p id="50418988-1ee1-464a-9cd7-f46a98dc14dc" class="">
+</p><h3 id="d82cf1ad-17b9-48eb-ab68-866292525f1f" class="">2.2 Limitation on Entering into Service Agreement</h3><ol type="1" id="ab0870a8-ba8f-4f2e-b87d-0e9da6e37658" class="numbered-list" start="1"><li>The Company may withhold approval of a membership application and thus restrict membership registration and entering into a service agreement or demand compensation according to the Company&#x27;s losses, in the following cases:<ol type="a" id="2a075dd0-7483-4fcb-bca1-3bad2a9ec097" class="numbered-list" start="1"><li>When the Company is unable to provide the service due to business or technical reasons.</li></ol><ol type="a" id="9a0498f5-0705-4609-afff-09cacfbb6375" class="numbered-list" start="2"><li>When someone else&#x27;s name is used.</li></ol><ol type="a" id="42163ded-5fc2-4ca1-b328-595771e42685" class="numbered-list" start="3"><li>When authentication cannot be performed using the mobile phone number entered by the applicant for membership registration.</li></ol><ol type="a" id="6b0b5b48-6731-4e6d-b2ef-e5a0f4a677a8" class="numbered-list" start="4"><li>When the same person attempts to create multiple accounts.</li></ol><ol type="a" id="899fbd34-6022-4325-b78e-5dd790a16efc" class="numbered-list" start="5"><li>When false, omitted, or misleading information is included in the registration information.</li></ol><ol type="a" id="a90892f3-2baf-46e4-80d7-09a985d7ec34" class="numbered-list" start="6"><li>When the applicant fails to provide the information required by the Company.</li></ol><ol type="a" id="e8ecdbc6-6470-4d64-a1e9-b81fcd42af37" class="numbered-list" start="7"><li>When approval cannot be obtained due to the customer&#x27;s fault, such as attaching false documents or violating other prescribed matters.</li></ol><ol type="a" id="23203c82-ab20-408e-a27c-eea0a5b47322" class="numbered-list" start="8"><li>When applied for the purpose of disrupting or interfering with social order or public morals.</li></ol><ol type="a" id="a00db833-ab70-4658-aad3-1f0f5f87fbdd" class="numbered-list" start="9"><li>When the applicant has lost membership status or has a history of terminating/cancelling a service agreement due to violation of the Company&#x27;s operational principles, these terms and conditions, or the law in the past, except when the Company has granted re-registration approval.</li></ol><ol type="a" id="2f631ae1-4469-4d4c-8f5f-b3e8c0c48d93" class="numbered-list" start="10"><li>When there is a history of not paying the service fee requested by the Company without justifiable reason.</li></ol><ol type="a" id="c55c065d-f460-46cc-b466-b26ca3b341b1" class="numbered-list" start="11"><li>When there is a history of losing (withdrawing) membership status or terminating/cancelling a service agreement due to reasons such as obstructing the Company&#x27;s service, repeating membership registration or termination for a certain period of time, or using it for purposes other than normal use.</li></ol><ol type="a" id="1f6c1ee8-98ec-4006-9f92-f64e492da355" class="numbered-list" start="12"><li>When the mobile phone number entered by the applicant for membership registration is found to be a phone number with a fraud history queried by the Cyber Investigation Department of the National Police Agency, etc.</li></ol><ol type="a" id="6bc893e0-ad64-49fa-9e1f-bea8f6cf030b" class="numbered-list" start="13"><li>When other requirements for entering into a service agreement, as specified by the Company, are not met.</li></ol></li></ol><ol type="1" id="fc8a0095-5519-47ec-b85c-11e8af730a6c" class="numbered-list" start="2"><li>If any of the reasons in subparagraph 1 occur after approval of the service application, the Company may terminate or suspend the service agreement entered into in accordance with these terms and conditions.</li></ol><p id="e665abcf-346d-4bd9-bbb1-18a6cfe9eea2" class="">
+</p><h3 id="909d3abe-aa8f-4e2c-af60-a520d8b23381" class="">2.3 <strong>Company&#x27;s Obligations</strong></h3><ol type="1" id="f16e924d-40f1-494a-9100-896b5d05f1e3" class="numbered-list" start="1"><li>The company shall not engage in acts prohibited by relevant laws and these terms of use, or acts that violate public morals, and shall make every effort to provide continuous and stable services.</li></ol><ol type="1" id="f0bfabbb-ce91-45eb-b780-64e8bf10d6b8" class="numbered-list" start="2"><li>The company shall provide a security system to protect personal information for the safe use of services by members, and shall disclose and comply with the personal information collection and processing policy.</li></ol><ol type="1" id="adaad065-1111-44aa-b204-5fb4e5cd79fb" class="numbered-list" start="3"><li>The company shall comply with obligations prescribed by relevant laws and regulations.</li></ol><p id="0cd58909-4e5f-486d-a2a6-f4603b2b6dcf" class="">
+</p><h3 id="2e475983-9045-4185-a314-1360a75533ec" class="">2.4 <strong>Obligations of Members</strong></h3><ol type="1" id="bf25ea49-9a1b-4ed5-84ec-4ba05152381d" class="numbered-list" start="1"><li>Members must comply with relevant laws and regulations, the provisions of the terms and conditions, and other notices provided by the company, and must not engage in any activities that interfere with the company&#x27;s business.</li></ol><ol type="1" id="696847b8-77cc-4913-aabe-b0cc45b2cb3c" class="numbered-list" start="2"><li>The responsibility for problems that occur during work due to failure to confirm the terms and conditions lies entirely with the &quot;member&quot; and therefore, members must carefully review the terms and conditions before using the service.</li></ol><ol type="1" id="28d6a462-b506-43df-b3f9-78464860ea96" class="numbered-list" start="3"><li>Members must provide truthful information, and if the member enters false or other illegal information and causes damage to the company or other users, the member shall be solely responsible for all liabilities, including civil and criminal liabilities.</li></ol><ol type="1" id="f66698fc-40f6-45a7-9260-a9bfa861fe53" class="numbered-list" start="4"><li>Members shall not copy, reproduce, translate, publish, broadcast, or otherwise use or provide to others any information obtained through the service without the prior consent of the company.</li></ol><ol type="1" id="d8002eae-2594-4b5c-b1d5-95b56914c52e" class="numbered-list" start="5"><li>Members are responsible for account management, including their own ID and password. Unless there is no attributable cause, the company is not responsible for any results arising from the member&#x27;s negligence in managing their account.</li></ol><ol type="1" id="56135062-57ab-493a-bc46-be50546f65f0" class="numbered-list" start="6"><li>Members shall not engage in the following acts related to the use of the service:<ol type="a" id="606a4066-3760-4f2a-829b-3c37a2c9f8d3" class="numbered-list" start="1"><li>Registering false information when applying for or changing services</li></ol><ol type="a" id="3a8b1783-2a30-4caf-9b2a-a1bc6d202e61" class="numbered-list" start="2"><li>Changing information posted by the company without permission</li></ol><ol type="a" id="a569f588-e5ec-4dd5-9463-08c0ab1f24f9" class="numbered-list" start="3"><li>Obtaining and using other users&#x27; information through hacking</li></ol><ol type="a" id="8fc70597-ebb8-4e08-b896-3d6e71bb066c" class="numbered-list" start="4"><li>Sending advertising information that goes against another person&#x27;s intentions</li></ol><ol type="a" id="6aba1d9e-c4f0-4565-8c7c-5664006d62ba" class="numbered-list" start="5"><li>Transmitting information that can interfere with the normal operation or stable operation of the service</li></ol><ol type="a" id="037b691d-6b89-4037-b9fe-f6a39249c51b" class="numbered-list" start="6"><li>Posting or sending messages while pretending to be a company employee or operator</li></ol><ol type="a" id="2042f266-c485-4642-9933-b6979554b103" class="numbered-list" start="7"><li>Collecting, storing, disclosing, or using other people&#x27;s information without permission</li></ol><ol type="a" id="0824f1bc-0e20-4d91-98ed-2fd0e34ce58e" class="numbered-list" start="8"><li>Infringing on the company&#x27;s or third party&#x27;s portrait rights and intellectual property rights, including copyrights</li></ol><ol type="a" id="76d1eae6-d6eb-47f6-be8b-84b02c3367d1" class="numbered-list" start="9"><li>Damaging the reputation of the company or third parties, or interfering with their business operations</li></ol><ol type="a" id="64765533-ca01-477c-ae66-037cb48ec288" class="numbered-list" start="10"><li>Disclosing or posting obscene or violent messages, images, or voices, or other information that goes against public morals and order</li></ol><ol type="a" id="9c8e395b-ea37-4f6d-bd8d-e33d92fcf327" class="numbered-list" start="11"><li>Writing content that unjustifiably interferes with the company&#x27;s business operations</li></ol><ol type="a" id="0e29d390-682c-4be7-b218-3b9b21e173d1" class="numbered-list" start="12"><li>Transferring or donating service usage rights, or other usage contract statuses, to others</li></ol><ol type="a" id="0b5ce2bd-5e48-40d4-ba18-0b2092ee1344" class="numbered-list" start="13"><li>Disclosing and using the provided service for non-private purposes in public places or for profit</li></ol><ol type="a" id="5dc4019d-33dd-48a6-a91a-a8cdacaff36b" class="numbered-list" start="14"><li>Using profanity, verbal abuse, sexual harassment, or repeatedly filing complaints to interfere with business operations when contacting customer centers</li></ol><ol type="a" id="86fbfdd1-047c-4fb3-ba4d-63786439931d" class="numbered-list" start="15"><li>Engaging in other acts that violate relevant laws or regulations established by the company</li></ol></li></ol><p id="af2533e3-b0f0-447a-83b8-f091b3a20d0d" class="">
+</p><h2 id="9adc6c77-d46f-40b4-a8e3-f3243a48865f" class="">3. Service</h2><h3 id="1315701d-42d0-4896-997b-cfefb84f0789" class="">3.1 Provision and Modification of Services</h3><ol type="1" id="f46f25b3-c131-43a3-8325-07e21118c9c1" class="numbered-list" start="1"><li>The Company shall provide the Service immediately upon completion of the membership agreement. However, for some services, the Company may commence the service from the designated date at its discretion.</li></ol><ol type="1" id="da63bf15-c194-45c5-80f7-ac04434b94ee" class="numbered-list" start="2"><li>The Company may provide a free trial period for members for the purpose of experiencing the Service.</li></ol><ol type="1" id="33a94071-cf73-4c85-aff8-c727c533d536" class="numbered-list" start="3"><li>The Company may provide additional services along with the services specified in these Terms and Conditions when providing services to members.</li></ol><ol type="1" id="0eb8a0c2-a6bb-4212-ba74-bf7cd33e334b" class="numbered-list" start="4"><li>The Company may differentiate the use of the service by distinguishing the member&#x27;s grade and classifying the usage time, frequency, and scope of the service provided.</li></ol><ol type="1" id="36d95573-f728-461d-897a-8a423d9d0814" class="numbered-list" start="5"><li>The types of services provided by the Company may change due to the Company&#x27;s management policy, and any changes will be announced through the method specified in Article 3, paragraph 3.</li></ol><p id="fe87f9a7-c774-47b9-a7da-d6abf38a8607" class="">
+</p><h3 id="ca550886-5804-422f-bfae-093a6e03436e" class=""><strong>3.2 Use of the Service and Service Restrictions</strong></h3><ol type="1" id="ab2bb620-f21f-4588-b5bc-d406dfe0a85e" class="numbered-list" start="1"><li>The service is provided 24 hours a day, year-round, unless the company has special business or technical difficulties. However, the company may suspend all or part of the service for reasons such as service updates, information processing, data updates, system maintenance, and system failure.</li></ol><ol type="1" id="1ffd67b4-4700-48fc-962b-072332e1df7e" class="numbered-list" start="2"><li>Without prior notice, the company may suspend part or all of the service in the following cases. However, the company will notify the relevant parties afterwards.<ol type="a" id="319bbef2-dd3d-493f-acb5-1daedf2da618" class="numbered-list" start="1"><li>When a telecommunications service provider specified in the Telecommunications Business Act suspends telecommunications services</li></ol><ol type="a" id="ea5ae914-6e19-457c-ad63-03174e0eda36" class="numbered-list" start="2"><li>When there is an emergency such as a natural disaster, war, power outage, equipment failure, or an abnormal usage of service</li></ol><ol type="a" id="2d2073e3-8db0-4e45-abf0-9ef332a0e816" class="numbered-list" start="3"><li>When there is an unexpected hardware (disk, etc.) failure, system shutdown, external communication company, power company, or telecommunications service provider failure</li></ol><ol type="a" id="1bf90977-8f52-4192-a6b3-e6d980183f80" class="numbered-list" start="4"><li>When urgent work is required due to security issues</li></ol><ol type="a" id="dd994588-1d9f-4318-98d6-7054903f1a0e" class="numbered-list" start="5"><li>When there is a clear reason why the service must be suspended without prior notice</li></ol></li></ol><ol type="1" id="d557532c-db79-4bd2-bf7c-6320fc0ea31f" class="numbered-list" start="3"><li>The company may modify, suspend, or change part or all of the service due to the company&#x27;s policies and operational needs, and unless there are special provisions in the relevant laws, no separate compensation will be provided to members.</li></ol><ol type="1" id="0eb2deae-543a-4f58-a6e9-569de1761fb8" class="numbered-list" start="4"><li>When there are changes or service interruptions in the content, usage, or usage time of the service, the company will announce the content, reasons, and dates of the service to be changed or suspended in advance through the company&#x27;s &quot;site&quot; or &quot;notice&quot; screen in a manner that members can easily recognize.</li></ol><ol type="1" id="45b4e279-79c4-4042-9572-e60eb4b7dea3" class="numbered-list" start="5"><li>If a member accesses the company&#x27;s site through a wired/wireless network or uses the company&#x27;s application installed on a device connected to a wired/wireless network to use the service overseas, separate data communication fees will be charged according to the communication fee plan agreed between the member and the communication service provider to which the member has subscribed. Data communication fees are separate from paid services, and the company is not responsible for data communication fees.</li></ol><ol type="1" id="8fd7dd23-1251-4661-92c7-d400dc4535b8" class="numbered-list" start="6"><li>If a member violates the obligations of this agreement or interferes with the normal operation of the service, the company may gradually restrict the use of the service through warnings, temporary suspensions, or permanent suspensions.</li></ol><ol type="1" id="725fd5ad-659a-40a7-aa3c-92c41291ea73" class="numbered-list" start="7"><li>Even in the case of the preceding paragraph, if a member violates the &quot;Resident Registration Act&quot; or engages in name or payment fraud, telephone number fraud, illegal program provision and operation obstruction that violates the &quot;Copyright Act&quot; and &quot;Computer Program Protection Act,&quot; illegal communication and hacking that violates the &quot;Information and Communication Network Act,&quot; or distribution of malicious programs or exceeding access authority, the company may immediately suspend the use of the service permanently. Benefits obtained through the use of the service when permanently suspended under this paragraph will also be forfeited, and the company will not compensate for this.</li></ol><p id="9540d027-c2c4-47ed-99e0-f802f668f995" class="">
+</p><h3 id="f30c5aec-5e15-4d2f-995e-91e1e9f944b9" class="">3.3 Provision of Information and Posting of Advertisements</h3><ol type="1" id="150d86f8-1068-43e8-9dad-6d095e8c3887" class="numbered-list" start="1"><li>The Company may post advertisements using the information provided by members in connection with the operation of the service, based on the members&#x27; consent.</li></ol><ol type="1" id="3f7fa4d9-1414-44b4-b427-ea80e1dd6f2e" class="numbered-list" start="2"><li>The Company may provide various information deemed necessary during the use of the service to members through the website, content screen, notice, etc., and may provide it through methods such as email if the member has given prior consent. However, members may refuse to receive them at any time by sending an email, etc. to the Company.</li></ol><p id="3de325d0-37b3-479d-a5b5-ed0676de227e" class="">
+</p><h3 id="fa4f1ab2-8459-4ec7-9db1-521a60f7bb49" class="">3.4 <strong>Termination and Cancellation</strong></h3><ol type="1" id="611d5ec3-0467-4429-9d19-c8e85e008d76" class="numbered-list" start="1"><li>Members may terminate the service contract in accordance with these Terms of Use. If a member applies for withdrawal, the Company will take measures accordingly.</li></ol><ol type="1" id="b3c1b1b1-3ae6-4ede-8c0c-9a7953184911" class="numbered-list" start="2"><li>The Company may terminate the service contract after prior notice if the member violates the obligations stipulated in these Terms of Use. However, if a member causes damage to the Company through violation of current laws or intentional or gross negligence, the Company may terminate the service contract without prior notice.</li></ol><ol type="1" id="aa9e19b6-14aa-4cf6-aa30-f80061a45ced" class="numbered-list" start="3"><li>If a member applies for withdrawal, the Company will immediately process the withdrawal procedure according to the member&#x27;s request. However, withdrawal processing may be restricted until the following reasons are resolved:<ol type="a" id="5ad0ae01-c64e-4245-8a5d-43fe4c59670b" class="numbered-list" start="1"><li>If there is a transaction in progress</li></ol><ol type="a" id="3f354ea3-7889-420f-b582-fb9e3a8f9452" class="numbered-list" start="2"><li>If there is a pending payment</li></ol><ol type="a" id="3e28acff-d2e9-41c0-9be4-13b3e4a910e9" class="numbered-list" start="3"><li>If there are remaining tasks such as settlement of fees for other paid services</li></ol></li></ol><ol type="1" id="ebe8581a-f0d4-4b8a-8e06-f93ca8bc926f" class="numbered-list" start="4"><li>The existing data and benefits that expire due to member withdrawal cannot be restored, and the Company is not responsible for recovering them.</li></ol><p id="f753d16c-3e8a-43c9-8b1b-1b42f3343d97" class="">
+</p><h2 id="2a361c4e-98ac-4301-bdb4-5017ecf1d34d" class="">4. <strong>Use of Paid Services and Payment</strong></h2><h3 id="7fb04ffd-5702-4d2c-bba2-cfd9fa0817ab" class="">4.1 <strong>Use of Paid Services Contract</strong></h3><ol type="1" id="7d6ea02e-9ddc-4829-86cb-90fc9d85af88" class="numbered-list" start="1"><li>By agreeing to these terms of use, the member applies for the use of paid services and a contract for the use of paid services is concluded when the company approves the application.</li></ol><ol type="1" id="79b56633-bd25-451a-9934-f9be8e988cf0" class="numbered-list" start="2"><li>The company may reject an application for use that falls under any of the following:<ol type="a" id="d51ca80c-d983-4677-b6f6-0a6c4b5a4b84" class="numbered-list" start="1"><li>If the applicant provides false information on the application form or fails to meet the requirements for use.</li></ol><ol type="a" id="65e26204-e90e-4516-ac92-ba72ab2590aa" class="numbered-list" start="2"><li>If the service is used in a country where the company does not provide the service through abnormal or circumventive means.</li></ol><ol type="a" id="9e8a905d-9ab4-43a8-9498-42896908e92e" class="numbered-list" start="3"><li>If the application is made for the purpose of disrupting social order, decency, or public morals.</li></ol><ol type="a" id="1d934b88-fdd6-495f-b770-16345905f42a" class="numbered-list" start="4"><li>If the service is intended to be used for an illegal purpose.</li></ol><ol type="a" id="64440499-e00c-43d8-88de-6019d23fa18a" class="numbered-list" start="5"><li>If the service is intended to be used for profit-seeking purposes.</li></ol><ol type="a" id="fcf48958-311b-4dd4-8a55-f01ee90b349c" class="numbered-list" start="6"><li>If the company&#x27;s equipment is not available, support for specific mobile devices is difficult, or there are technical difficulties.</li></ol><ol type="a" id="84ca36e8-58c9-4223-991d-4fbf5e0619fa" class="numbered-list" start="7"><li>If there is a failure in the service or in the payment method for service usage fees.</li></ol><ol type="a" id="fa64ca38-686e-4e5a-9685-61f522a3ad9e" class="numbered-list" start="8"><li>If approval is deemed inappropriate due to reasons equivalent to the above.</li></ol></li></ol><ol type="1" id="3101ebc3-197c-45c4-a0c8-501285d63795" class="numbered-list" start="3"><li>The time of providing some of the products provided by the company may vary without prior notice depending on the permission of each copyright holder.</li></ol><h3 id="34640ef8-3815-4e8f-adf6-b4e755fbcd83" class="">4.2 Regular subscription and payment</h3><ol type="1" id="49767aaf-fb47-4445-b709-7649f39f8e95" class="numbered-list" start="1"><li>Some of our services may be provided in the form of one-time or monthly subscriptions through mobile application stores.</li></ol><ol type="1" id="097f7a7e-fdb3-427d-b5c9-efe8919571af" class="numbered-list" start="2"><li>The terms of use of the relevant store apply to purchases made through the mobile application store, and all inquiries related to purchases must be made to the relevant store.</li></ol><ol type="1" id="fea8d052-e666-4bad-a5dc-642cfcb7eb12" class="numbered-list" start="3"><li>Members agree to pay all fees incurred by members, including the relevant sales tax, and are responsible for paying the service fee related to the service selected for purchase.</li></ol><p id="17bd0b7a-8f51-4628-b3b1-7a6a1cebb5d9" class="">
+</p><h3 id="87ab4a84-ba7d-4cbe-b03c-cde56f7a3468" class="">4.3 Canceling Regular Subscription and Refund</h3><ol type="1" id="56ca46d8-3f58-4dfc-90e0-134818522ab4" class="numbered-list" start="1"><li>If a member uses paid content through regular subscription, the member can cancel the regular subscription.</li></ol><ol type="1" id="27f1984d-4609-4fa1-bf53-336977c91538" class="numbered-list" start="2"><li>If a member cancels the regular subscription, the next automatic payment will not be made, and the member can use the paid content that is currently in use until the end of the paid content&#x27;s usage period after the last payment.</li></ol><ol type="1" id="ad442aa9-82cc-4398-aea2-975941a36b96" class="numbered-list" start="3"><li>If mobile application store was used, the refund policy should be inquired with the mobile application store.</li></ol><p id="f9d3dec9-9eef-49a1-8d7c-a467b02836de" class="">
+</p><h2 id="8d816500-98f9-498e-a25f-c64a7851007e" class=""><strong>5. Disclaimer and Dispute Resolution</strong></h2><h3 id="e0f6369c-d6d7-4a57-b4c6-03237847c39c" class="">5.1 <strong>Company&#x27;s Disclaimer</strong></h3><ol type="1" id="86fefb89-2026-4535-abf4-2dfd291aae36" class="numbered-list" start="1"><li>The company shall not be responsible for providing services in case of force majeure or similar unavoidable circumstances.</li></ol><ol type="1" id="2171acda-24ad-4d49-86ee-dee6605c6dae" class="numbered-list" start="2"><li>The company shall not be responsible for any service interruptions caused by the member&#x27;s fault.</li></ol><ol type="1" id="764fa5f0-89ff-48aa-ab37-bc098f3e9fe5" class="numbered-list" start="3"><li>The company shall not be responsible for the reliability, accuracy, or other contents of information, data, or facts posted by members in relation to the service.</li></ol><ol type="1" id="dbb2c66c-b217-4465-8f47-0093e8b2215c" class="numbered-list" start="4"><li>The company shall not be liable for transactions between members or between members and third parties mediated through the service.</li></ol><ol type="1" id="5010c597-3bc7-4f3d-9fbc-247c9ddebdeb" class="numbered-list" start="5"><li>The company shall not be responsible for the use of free services provided unless special regulations apply under relevant laws.</li></ol><ol type="1" id="7db1a0e0-cf9c-467f-af4c-7deda19fa4cd" class="numbered-list" start="6"><li>The company shall not be responsible for monitoring the content and quality of products or services advertised by third parties on the service screen or linked websites.</li></ol><ol type="1" id="55a4e856-4c4c-4aa3-b2d3-a42bd4b96df3" class="numbered-list" start="7"><li>The company, its employees, and agents shall not be liable for damages arising from the following:<ol type="a" id="588edd5f-ada1-49b3-84af-0ea4a25d0a49" class="numbered-list" start="1"><li>Damages caused by false or inaccurate information provided by the member</li></ol><ol type="a" id="6032683f-f7f3-4569-ae88-5f7e3bbd4964" class="numbered-list" start="2"><li>Personal damages incurred during the access and use of the service, regardless of the nature and circumstances thereof</li></ol><ol type="a" id="23b34c9b-50e5-446a-9f1b-eeffe5c1de9e" class="numbered-list" start="3"><li>Damages caused by illegal access to the server by a third party or illegal use of the server</li></ol><ol type="a" id="8155fb84-4653-4fb0-bb3d-6e8822847d29" class="numbered-list" start="4"><li>Damages caused by any illegal interference or interruption of transmission to or from the server by a third party</li></ol><ol type="a" id="e9aab545-ebe1-44dd-abea-f8ad8720d928" class="numbered-list" start="5"><li>Damages caused by any virus, spyware, and other malicious programs transmitted, disseminated, or facilitated illegally through the use of the service by a third party</li></ol><ol type="a" id="dc2febd2-4ac1-4b67-aae3-9755a674b260" class="numbered-list" start="6"><li>All civil and criminal liability arising from defamation, leakage of personal information, and other illegal acts occurring during the use of the service between users</li></ol><ol type="a" id="9e76c883-7595-46fe-8072-1b550f98096d" class="numbered-list" start="7"><li>Other damages arising from the member&#x27;s violation of these Terms of Service and use of the service.</li></ol><p id="155c0a6a-8239-425b-aa64-b7742c9a424f" class="">
+</p></li></ol><h3 id="71a557f4-137a-46ff-8eeb-cc1fdbbc0df8" class="">5.2 <strong>Indemnification</strong></h3><ol type="1" id="fb1f5c8d-2904-4b56-8c4d-d325e59f992f" class="numbered-list" start="1"><li>During the use of the service after reviewing and agreeing to these terms and conditions, if a member violates related laws or regulations, engages in illegal activities, or violates the terms and conditions unrelated to the terms and conditions mentioned here, the member must indemnify the company at their own expense, including legal fees.</li></ol><ol type="1" id="166acdc2-a967-4de7-8fdb-04bccc188347" class="numbered-list" start="2"><li>If a third party files for damages or litigation against the company and its affiliated companies, intellectual property, executives, employees, lawyers, agents, or other members due to the aforementioned violations, the member is also responsible for indemnifying the company at their own expense, including legal fees.</li></ol><h3 id="f3d189a7-3a2a-4ebd-bd52-a71e18f454be" class="">5.3 <strong>Governing Law and Jurisdiction</strong></h3><ol type="1" id="60a4967f-1531-45ec-9ea4-f08e1897fa43" class="numbered-list" start="1"><li>The laws of the Republic of Korea shall apply to the interpretation of these terms and conditions and disputes between the company and its members.</li></ol><ol type="1" id="1a1e7763-003d-48de-b62e-90f3a9e5cb2c" class="numbered-list" start="2"><li>Any lawsuits that arise between the member and the company during the use of the service shall be filed with the court in accordance with the procedures prescribed by law, or with the Seoul Central District Court.</li></ol><p id="a955b20b-542a-4c63-bd4f-da6ac2a74487" class="">
+</p><h3 id="bd848ad4-b8de-424a-9193-508f0fd5c498" class=""><strong>Provisions</strong></h3><p id="70764ff0-d95f-4f8b-8e94-3e24cfb0c4a6" class="">These Terms of Service are effective as of August 7, 2023.</p><p id="66b5005c-04e8-4e80-802a-1266f9056159" class="">
+</p><p id="ab79f726-f8c0-4511-93e7-12c2aa334f65" class="">
+</p><p id="4e4eee5c-3ad1-4880-84e6-0acb82b80c0c" class="">
+</p></div></article></body></html>
